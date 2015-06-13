@@ -9,6 +9,7 @@
 #import "CharityDetailViewController.h"
 #import "M13ProgressViewImage.h"
 #import <QuartzCore/QuartzCore.h>
+#import "CharityResultViewController.h"
 
 @interface CharityDetailViewController ()
 
@@ -109,21 +110,22 @@
 
 - (void)payPalPaymentViewController:(PayPalPaymentViewController *)paymentViewController didCompletePayment:(PayPalPayment *)completedPayment {
     NSLog(@"PayPal Payment Success!");
-    [self showSuccess];
     
     [self sendCompletedPaymentToServer:completedPayment]; // Payment was processed successfully; send to server for verification and fulfillment
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // jump to result page
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"async");
+            CharityResultViewController *resultVC = [[CharityResultViewController alloc] init];
+            [self.navigationController presentViewController:resultVC animated:YES completion:nil];
+        });
+    });
 }
 
 - (void)payPalPaymentDidCancel:(PayPalPaymentViewController *)paymentViewController {
     NSLog(@"PayPal Payment Canceled");
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-#pragma mark - Helpers
-
-- (void)showSuccess {
-    NSLog(@"success, jump to result page");
 }
 
 #pragma mark Proof of payment validation
