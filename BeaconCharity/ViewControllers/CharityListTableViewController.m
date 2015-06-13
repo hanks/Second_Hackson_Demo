@@ -7,8 +7,13 @@
 //
 
 #import "CharityListTableViewController.h"
+#import "APIManager.h"
 
 @interface CharityListTableViewController ()
+
+@property (nonatomic) NSNumber *minor;
+@property (nonatomic) NSNumber *major;
+@property (strong, nonatomic) NSMutableArray *charityItems;
 
 @end
 
@@ -17,12 +22,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.major = [NSNumber numberWithInteger:12];;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-
+    self.charityItems = [NSMutableArray array];
+    
+    // fetch items from server
+    __weak CharityListTableViewController *weakSelf = self;
+    SuccessCallback successcallback = ^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *aDictionary = (NSDictionary *)responseObject;
+        NSMutableArray *itemArr = [NSMutableArray array];
+        itemArr = (NSMutableArray *)aDictionary[@"charityItems"];
+    };
+    
+    // call item json api
+    NSString *endpoint = [NSString stringWithFormat:@"/charityitems/%@", self.major];
+    [APIManager requestJSONWithEndpoint:endpoint successCallback:successcallback];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,7 +53,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 10;
+    return [self.charityItems count];
 }
 
 - (UIImage *)imageForRating:(int)rating
