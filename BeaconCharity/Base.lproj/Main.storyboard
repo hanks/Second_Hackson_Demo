@@ -77,26 +77,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="headerImage" translatesAutoresizingMaskIntoConstraints="NO" id="tUe-y7-FFI">
-                                <rect key="frame" x="16" y="20" width="568" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="UG7-Kh-Hbv"/>
-                                </constraints>
-                            </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BNI-8U-hiW">
-                                <rect key="frame" x="16" y="531" width="568" height="2"/>
-                            </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2c-di-7GL">
-                                <rect key="frame" x="0.0" y="570" width="600" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="cuB-dH-1jA"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-sb-x8P">
-                                <rect key="frame" x="16" y="359" width="568" height="164"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-sb-x8P">
+                                <rect key="frame" x="16" y="384" width="568" height="164"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="164" id="VD9-i4-ZEo"/>
@@ -105,13 +87,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BNI-8U-hiW">
+                                <rect key="frame" x="16" y="531" width="568" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2c-di-7GL">
+                                <rect key="frame" x="0.0" y="570" width="600" height="30"/>
+                                <color key="backgroundColor" red="0.1150770175" green="1" blue="0.21048580210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cuB-dH-1jA"/>
+                                </constraints>
+                                <state key="normal" title="Paypalへ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerImage" translatesAutoresizingMaskIntoConstraints="NO" id="tUe-y7-FFI">
+                                <rect key="frame" x="16" y="64" width="568" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="UG7-Kh-Hbv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pt0-sb-x8P" firstAttribute="trailing" secondItem="f6M-aa-IhL" secondAttribute="trailingMargin" id="45r-3r-frs"/>
                             <constraint firstItem="tUe-y7-FFI" firstAttribute="leading" secondItem="f6M-aa-IhL" secondAttribute="leading" constant="16" id="6K2-Iu-nzt"/>
                             <constraint firstAttribute="trailing" secondItem="l2c-di-7GL" secondAttribute="trailing" id="8MB-i7-Jiv"/>
-                            <constraint firstItem="pt0-sb-x8P" firstAttribute="top" secondItem="tUe-y7-FFI" secondAttribute="bottom" constant="39" id="Cwq-PE-rfn"/>
+                            <constraint firstItem="pt0-sb-x8P" firstAttribute="top" secondItem="tUe-y7-FFI" secondAttribute="bottom" constant="20" id="Cwq-PE-rfn"/>
                             <constraint firstItem="Qvw-Cm-dSb" firstAttribute="top" secondItem="l2c-di-7GL" secondAttribute="bottom" id="cD0-Ft-mM3"/>
                             <constraint firstItem="pt0-sb-x8P" firstAttribute="leading" secondItem="f6M-aa-IhL" secondAttribute="leadingMargin" id="d6U-La-c6e"/>
                             <constraint firstItem="l2c-di-7GL" firstAttribute="leading" secondItem="f6M-aa-IhL" secondAttribute="leading" id="glm-ph-JIZ"/>
