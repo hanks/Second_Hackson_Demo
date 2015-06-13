@@ -15,23 +15,30 @@ class CharityItem(object):
     def to_dict(self):
         return {
             "name": self.name,
-            "price": self.price,
-            "description": self.description,
-            "image_url": self.image_url,
+            "short_desc": self.short_desc,
+            "long_desc": self.long_desc,
+            "image_name": self.image_name,
             "minor": self.minor,
             "major": self.major,
-            "priority": self.priority,
+            "rating": self.rating,
+            "objective_money": self.objective_money,
+            "actual_money": self.actual_money,
         }
+
+    def accomplishment_rate(self):
+        return self.actual_money / self.objective_money
 
     @classmethod
     def from_dict(cls, json_data):
-        name = json_data["name"]
-        price = int(json_data["price"])
-        description = json_data["description"]
-        image_url = json_data["image_url"]
+        name = json_data["name"]x
+        short_desc = int(json_data["short_desc"])
+        long_desc = json_data["long_desc"]
+        image_name = json_data["image_name"]
         minor = int(json_data["minor"])
         major = int(json_data["major"])
-        priority = int(json_data["priority"])
-
-        return cls(name, price, description, image_url, major, minor, priority)
+        rating = int(json_data["rating"])
+        objective_money = int(json_data["objective_money"])
+        actual_money = int(json_data["actual_money"])
+    def __init__(self, name, short_desc, long_desc, image_name, rating, major, minor, objective_money, actual_money):
+        return cls(name, short_desc, long_desc, image_name, rating, major, minor, objective_money, actual_money)
 
