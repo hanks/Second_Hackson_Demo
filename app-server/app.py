@@ -23,7 +23,8 @@ def charity_item(major, minor):
 @app.route("/charityitems/<major>", methods=["GET"])
 def charity_items(major):
     data_dicts = redis_manager.get_dicts(major)
-    return jsonify(data_dicts)
+    result = {"charityItems": data_dicts}
+    return jsonify(result)
 
 @app.route("/image/<name>")
 def image(name):

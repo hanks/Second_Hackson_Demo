@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from __future__ import division
 from redis import Redis
 
 class RedisManager(object):
@@ -21,14 +22,13 @@ class RedisManager(object):
         return self.redis_instance.hgetall(key)
 
     def get_dicts(self, major):
-        pattern = "{}*".format(major)
-        keys = self.redis_instance.keys(pattern=pattern)
+        keys = self.redis_instance.keys()
         
         result = []
         for key in keys:
-            result.append(self.get_dict(key))
-
+            result.append(self.redis_instance.hgetall(key))
+            
         # sort by accomplishment_rate
-        result = sorted(result, kye=lambda k: k["actual_money"] / k["objective_money"], reverse=True)
+        sorted_result = sorted(result, key=lambda k: int(k["actual_money"]) / int(k["objective_money"]), reverse=True)
         
-        return result
+        return sorted_result

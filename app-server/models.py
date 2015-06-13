@@ -1,5 +1,7 @@
 # coding: utf-8
 
+from __future__ import division
+
 class CharityItem(object):
     def __init__(self, name, short_desc, long_desc, image_name, rating, major, minor, objective_money, actual_money):
         self.name = name
