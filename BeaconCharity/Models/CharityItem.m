@@ -18,7 +18,9 @@
               objectiveMoney:(NSInteger)objectiveMoney
                  actualMoney:(NSInteger)actualMoney
                       rating:(NSInteger)rating
-                    iconName:(NSString *)iconName; {
+                    iconName:(NSString *)iconName
+             detailImageName:(NSString *)detailImageName {
+    
     self = [super init];
     
     if (self) {
@@ -31,6 +33,7 @@
         _actualMoney = actualMoney;
         _rating = rating;
         _iconName = iconName;
+        _detailImageName = detailImageName;
     }
     
     return self;
@@ -41,6 +44,7 @@
     NSString *shortDesc = dict[@"short_desc"];
     NSString *longDesc = dict[@"long_desc"];
     NSString *iconName = dict[@"image_name"];
+    NSString *detailImageName = dict[@"detail_image_name"];
     CLBeaconMajorValue majorValue = [dict[@"major"] intValue];
     CLBeaconMajorValue minorValue = [dict[@"minor"] intValue];
     NSInteger rating = [dict[@"rating"] intValue];
@@ -55,7 +59,9 @@
                objectiveMoney:objectiveMoney
                   actualMoney:actualMoney
                        rating:rating
-                     iconName:iconName];
+                     iconName:iconName
+              detailImageName:detailImageName
+            ];
 }
 
 - (float)accomplishmentRate {

@@ -10,6 +10,7 @@
 #import "M13ProgressViewImage.h"
 #import <QuartzCore/QuartzCore.h>
 #import "CharityResultViewController.h"
+#import "APIManager.h"
 
 @interface CharityDetailViewController ()
 
@@ -41,7 +42,14 @@
     });
     
     // update detail image
-    
+    // call item image api
+    __weak CharityDetailViewController *weakSelf = self;
+    SuccessCallback successcallback = ^(AFHTTPRequestOperation *operation, id imageObject) {
+        weakSelf.charityDetailImageView.image = imageObject;
+    };
+    NSString *endpoint = [NSString stringWithFormat:@"/image/%@", self.charityItem.detailImageName];
+    [APIManager requestImageWithEndpoint:endpoint successCallback:successcallback];
+
     
     // update long description
     [self.charityDetailDescTextView setText:self.charityItem.longDesc];

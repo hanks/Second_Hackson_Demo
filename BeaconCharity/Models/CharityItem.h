@@ -21,6 +21,7 @@
 @property (nonatomic, readonly) NSInteger rating;
 @property (nonatomic, readonly) NSInteger actualMoney;
 @property (nonatomic, readonly) NSString* iconName;
+@property (nonatomic, readonly) NSString* detailImageName;
 
 - (instancetype)initWithName:(NSString *)itemName
                     longDesc:(NSString *)longDesc
@@ -30,7 +31,8 @@
               objectiveMoney:(NSInteger)objectiveMoney
                  actualMoney:(NSInteger)actualMoney
                       rating:(NSInteger)rating
-                    iconName:(NSString *)iconName;
+                    iconName:(NSString *)iconName
+             detailImageName:(NSString *)detailImageName;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 - (float)accomplishmentRate;
