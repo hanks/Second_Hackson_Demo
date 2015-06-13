@@ -75,7 +75,7 @@
     
     // Optional: include payment details
     NSDecimalNumber *shipping = [[NSDecimalNumber alloc] initWithString:@"0"];
-    NSDecimalNumber *tax = [[NSDecimalNumber alloc] initWithString:@"2.50"];
+    NSDecimalNumber *tax = [[NSDecimalNumber alloc] initWithString:@"0"];
     PayPalPaymentDetails *paymentDetails = [PayPalPaymentDetails paymentDetailsWithSubtotal:subtotal
                                                                                withShipping:shipping
                                                                                     withTax:tax];
