@@ -8,6 +8,7 @@
 
 #import "CharityListTableViewController.h"
 #import "APIManager.h"
+#import "CharityItem.h"
 
 @interface CharityListTableViewController ()
 
@@ -32,6 +33,13 @@
         NSDictionary *aDictionary = (NSDictionary *)responseObject;
         NSMutableArray *itemArr = [NSMutableArray array];
         itemArr = (NSMutableArray *)aDictionary[@"charityItems"];
+        
+        for (NSDictionary *dict in itemArr) {
+            [weakSelf.charityItems addObject:[[CharityItem alloc] initWithDictionary:dict]];
+        }
+        
+        // reload data aync
+        [weakSelf.tableView reloadData];
     };
     
     // call item json api
@@ -56,7 +64,7 @@
     return [self.charityItems count];
 }
 
-- (UIImage *)imageForRating:(int)rating
+- (UIImage *)imageForRating:(NSInteger)rating
 {
     switch (rating) {
         case 1: return [UIImage imageNamed:@"1StarSmall"];
@@ -71,17 +79,23 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CharityCell" forIndexPath:indexPath];
     
+    NSInteger index = indexPath.row;
+    CharityItem *item = (CharityItem *)self.charityItems[index];
+    
     // set title
     UILabel *titileLabel = (UILabel *)[cell viewWithTag:99];
-    titileLabel.text = @"富士山応援寄付";
+    titileLabel.text = item.itemName;
     
     // set subtitl
     UILabel *subtitleLabel = (UILabel *)[cell viewWithTag:100];
-    subtitleLabel.text = @"富士山の通路を改善する";
+    subtitleLabel.text = item.shortDesc;
     
     // set star image
     UIImageView *ratingImageView = (UIImageView *)[cell viewWithTag:101];
-    ratingImageView.image = [self imageForRating:3];
+    ratingImageView.image = [self imageForRating:item.rating];
+    
+    // set icon
+    
     
     return cell;
 }
