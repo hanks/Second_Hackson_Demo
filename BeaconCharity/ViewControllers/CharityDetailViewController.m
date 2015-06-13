@@ -66,24 +66,15 @@
     // Optional: include multiple items
     PayPalItem *item1 = [PayPalItem itemWithName:@"Old jeans with holes"
                                     withQuantity:2
-                                       withPrice:[NSDecimalNumber decimalNumberWithString:@"84.99"]
+                                       withPrice:[NSDecimalNumber decimalNumberWithString:@"100"]
                                     withCurrency:@"USD"
                                          withSku:@"Hip-00037"];
-    PayPalItem *item2 = [PayPalItem itemWithName:@"Free rainbow patch"
-                                    withQuantity:1
-                                       withPrice:[NSDecimalNumber decimalNumberWithString:@"0.00"]
-                                    withCurrency:@"USD"
-                                         withSku:@"Hip-00066"];
-    PayPalItem *item3 = [PayPalItem itemWithName:@"Long-sleeve plaid shirt (mustache not included)"
-                                    withQuantity:1
-                                       withPrice:[NSDecimalNumber decimalNumberWithString:@"37.99"]
-                                    withCurrency:@"USD"
-                                         withSku:@"Hip-00291"];
-    NSArray *items = @[item1, item2, item3];
+    
+    NSArray *items = @[item1];
     NSDecimalNumber *subtotal = [PayPalItem totalPriceForItems:items];
     
     // Optional: include payment details
-    NSDecimalNumber *shipping = [[NSDecimalNumber alloc] initWithString:@"5.99"];
+    NSDecimalNumber *shipping = [[NSDecimalNumber alloc] initWithString:@"0"];
     NSDecimalNumber *tax = [[NSDecimalNumber alloc] initWithString:@"2.50"];
     PayPalPaymentDetails *paymentDetails = [PayPalPaymentDetails paymentDetailsWithSubtotal:subtotal
                                                                                withShipping:shipping
@@ -94,7 +85,7 @@
     PayPalPayment *payment = [[PayPalPayment alloc] init];
     payment.amount = total;
     payment.currencyCode = @"USD";
-    payment.shortDescription = @"Hipster clothing";
+    payment.shortDescription = @"富士山寄付";
     payment.items = items;  // if not including multiple items, then leave payment.items as nil
     payment.paymentDetails = paymentDetails; // if not including payment details, then leave payment.paymentDetails as nil
     
@@ -132,7 +123,7 @@
 #pragma mark - Helpers
 
 - (void)showSuccess {
-    NSLog(@"success");
+    NSLog(@"success, jump to result page");
 }
 
 #pragma mark Proof of payment validation
@@ -162,15 +153,5 @@
     // TODO: Send authorization to server
     NSLog(@"Here is your authorization:\n\n%@\n\nSend this to your server to complete profile sharing setup.", authorization);
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
