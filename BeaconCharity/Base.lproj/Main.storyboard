@@ -102,7 +102,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cgc-cE-LBw" kind="show" id="QmF-F1-y3A"/>
+                                    <action selector="pay" destination="p1d-pf-GC9" eventType="touchUpInside" id="jBZ-96-2T8"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-sb-x8P">
@@ -159,6 +159,7 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="payNowButton" destination="l2c-di-7GL" id="4S4-DM-eXQ"/>
                         <outlet property="processValueLabel" destination="srp-KW-lQU" id="BB6-cr-OqI"/>
                         <outlet property="progressImageView" destination="lNf-4K-uwg" id="CMh-Xi-ntc"/>
                     </connections>
@@ -167,61 +168,10 @@
             </objects>
             <point key="canvasLocation" x="1971" y="673"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="4gJ-J3-qB6">
-            <objects>
-                <viewController id="cgc-cE-LBw" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rb9-vk-aM0"/>
-                        <viewControllerLayoutGuide type="bottom" id="2EJ-C0-8w7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="feO-zS-vB7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfy-GZ-Pdw">
-                                <rect key="frame" x="16" y="101" width="191" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bam-4u-pEn">
-                                <rect key="frame" x="16" y="139" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXK-ND-PZk">
-                                <rect key="frame" x="16" y="72" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iP1-eW-NRf">
-                                <rect key="frame" x="16" y="206" width="36" height="30"/>
-                                <state key="normal" title="Send">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Nhx-Xh-NU8" kind="show" id="raR-1d-53i"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qd0-j4-JaC">
-                                <rect key="frame" x="16" y="168" width="191" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DNO-xh-WSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2713" y="673"/>
-        </scene>
-        <!--View Controller-->
+        <!--Charity Result View Controller-->
         <scene sceneID="sMp-ba-tNz">
             <objects>
-                <viewController id="Nhx-Xh-NU8" sceneMemberID="viewController">
+                <viewController id="Nhx-Xh-NU8" customClass="CharityResultViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PMI-8t-9Rz"/>
                         <viewControllerLayoutGuide type="bottom" id="zTS-FL-CBL"/>
@@ -266,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcP-WA-FAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="1517"/>
+            <point key="canvasLocation" x="473" y="1587"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gZD-UH-ZmT">
