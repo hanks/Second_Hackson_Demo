@@ -48,7 +48,7 @@ def init_test_data():
     redis_manager.set_dict(dictionary, item.major, item.minor)
 
     # add item4
-    item = CharityItem(u"ゴミを無くして美しい山を取り戻したい！", u"ゴミを無くして美しい山を取り戻したい！", u"ゴミを無くして美しい山を取り戻したい！", "4.png", 4, 12, 4, 2000, 1300)
+    item = CharityItem(u"美しい山を守る！", u"ゴミを無くして！", u"ゴミを無くして美しい山を取り戻したい！", "4.png", 4, 12, 4, 2000, 1300)
     dictionary = item.to_dict()
     redis_manager.set_dict(dictionary, item.major, item.minor)
 
