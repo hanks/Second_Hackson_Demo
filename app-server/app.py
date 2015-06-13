@@ -32,14 +32,29 @@ def image(name):
 
 def init_test_data():
     # add item1
-    item1 = Item("mario", 1000, "a happy mario toy", "1.png", 12, 1, 10)
-    dict1 = item1.to_dict()
-    redis_manager.set_dict(dict1, 12, 1)
+    item = CharityItem(u"富士山寄付", u"富士山の登山道を改善する", u"富士山の登山道を改善する", "1.png", 3, 12, 1, 2000, 1700)
+    dictionary = item.to_dict()
+    redis_manager.set_dict(dictionary, item.major, item.minor)
 
     # add item2
-    item2 = Item("doraamon", 1500, "a cute doraamon", "2.png", 12, 2, 15)
-    dict2 = item2.to_dict()
-    redis_manager.set_dict(dict2, 12, 2)    
+    item = CharityItem(u"水族館存続のために！", u"水族館存続のために！", u"水族館存続のために！", "2.png", 2, 12, 2, 2500, 1700)
+    dictionary = item.to_dict()
+    redis_manager.set_dict(dictionary, item.major, item.minor)
+
+    # add item3
+    item = CharityItem(u"古民家の再活用のために！", u"古民家の再活用のために！", u"古民家の再活用のために！", "3.png", 1, 12, 3, 2000, 1500)
+    dictionary = item.to_dict()
+    redis_manager.set_dict(dictionary, item.major, item.minor)
+
+    # add item4
+    item = CharityItem(u"ゴミを無くして美しい山を取り戻したい！", u"ゴミを無くして美しい山を取り戻したい！", u"ゴミを無くして美しい山を取り戻したい！", "4.png", 4, 12, 4, 2000, 1300)
+    dictionary = item.to_dict()
+    redis_manager.set_dict(dictionary, item.major, item.minor)
+
+    # add item5
+    item = CharityItem(u"お酒作りの美味しい水を守りたい！", u"お酒作りの美味しい水を守りたい！", u"お酒作りの美味しい水を守りたい！", "5.png", 2, 12, 5, 2000, 1100)
+    dictionary = item.to_dict()
+    redis_manager.set_dict(dictionary, item.major, item.minor)
 
 if __name__ == "__main__":
     init_test_data()

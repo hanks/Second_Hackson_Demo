@@ -28,7 +28,7 @@ class RedisManager(object):
         for key in keys:
             result.append(self.get_dict(key))
 
-        // sort by accomplishment_rate
+        # sort by accomplishment_rate
         result = sorted(result, kye=lambda k: k["actual_money"] / k["objective_money"], reverse=True)
         
         return result

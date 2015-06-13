@@ -31,7 +31,7 @@ class CharityItem(object):
 
     @classmethod
     def from_dict(cls, json_data):
-        name = json_data["name"]x
+        name = json_data["name"]
         short_desc = int(json_data["short_desc"])
         long_desc = json_data["long_desc"]
         image_name = json_data["image_name"]
