@@ -113,14 +113,13 @@
     
     [self sendCompletedPaymentToServer:completedPayment]; // Payment was processed successfully; send to server for verification and fulfillment
     
-    // jump to result page
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"async");
-            CharityResultViewController *resultVC = [[CharityResultViewController alloc] init];
-            [self.navigationController presentViewController:resultVC animated:YES completion:nil];
-        });
-    });
+    // return to detail view
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // jump to result view
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    CharityResultViewController *resultVC = [storyBoard instantiateViewControllerWithIdentifier:@"CharityResultViewController"];
+    [self presentViewController:resultVC animated:YES completion:nil];
 }
 
 - (void)payPalPaymentDidCancel:(PayPalPaymentViewController *)paymentViewController {

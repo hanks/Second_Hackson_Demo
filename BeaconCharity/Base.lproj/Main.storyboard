@@ -171,7 +171,7 @@
         <!--Charity Result View Controller-->
         <scene sceneID="sMp-ba-tNz">
             <objects>
-                <viewController id="Nhx-Xh-NU8" customClass="CharityResultViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CharityResultViewController" id="Nhx-Xh-NU8" customClass="CharityResultViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PMI-8t-9Rz"/>
                         <viewControllerLayoutGuide type="bottom" id="zTS-FL-CBL"/>
