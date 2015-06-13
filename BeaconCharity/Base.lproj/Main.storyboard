@@ -1,22 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZUH-Ph-R5T">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nTu-bU-0JW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Charity List Table View Controller-->
+        <!--Beacon Charity List-->
         <scene sceneID="kSI-Bd-jiO">
             <objects>
                 <tableViewController id="ZUH-Ph-R5T" customClass="CharityListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="BoS-Y9-5iq">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="BoS-Y9-5iq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="sy8-O9-TSJ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharityCell" rowHeight="80" id="sy8-O9-TSJ">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sy8-O9-TSJ" id="nE1-LT-KPY">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Fm-5A-IvX">
+                                            <rect key="frame" x="8" y="11" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="EGu-Bf-OSs"/>
+                                                <constraint firstAttribute="height" constant="60" id="QGn-Fr-xYd"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYm-Zc-z8g">
+                                            <rect key="frame" x="76" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGn-Cd-Jho">
+                                            <rect key="frame" x="76" y="40" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7Fm-5A-IvX" secondAttribute="bottom" constant="0.5" id="3cp-03-kX9"/>
+                                        <constraint firstItem="7Fm-5A-IvX" firstAttribute="leading" secondItem="nE1-LT-KPY" secondAttribute="leadingMargin" id="MsR-e8-l0M"/>
+                                        <constraint firstItem="DYm-Zc-z8g" firstAttribute="leading" secondItem="7Fm-5A-IvX" secondAttribute="trailing" constant="8" id="UbQ-l2-nEL"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="OGn-Cd-Jho" secondAttribute="bottom" constant="10.5" id="VCU-U2-pEt"/>
+                                        <constraint firstItem="DYm-Zc-z8g" firstAttribute="top" secondItem="nE1-LT-KPY" secondAttribute="topMargin" constant="3" id="bk0-qI-4lR"/>
+                                        <constraint firstItem="OGn-Cd-Jho" firstAttribute="leading" secondItem="7Fm-5A-IvX" secondAttribute="trailing" constant="8" id="bx1-lk-9uw"/>
+                                        <constraint firstItem="7Fm-5A-IvX" firstAttribute="top" secondItem="nE1-LT-KPY" secondAttribute="topMargin" constant="3" id="scD-og-mFi"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -25,8 +56,27 @@
                             <outlet property="delegate" destination="ZUH-Ph-R5T" id="YoZ-nP-YP3"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Beacon Charity List" id="iqv-m8-l2Y"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MqX-o9-u7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="673"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gZD-UH-ZmT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nTu-bU-0JW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jrJ-4W-Y82">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZUH-Ph-R5T" kind="relationship" relationship="rootViewController" id="wMo-QR-mVP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipq-zh-AAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="373" y="673"/>
         </scene>
