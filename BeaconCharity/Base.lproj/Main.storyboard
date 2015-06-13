@@ -106,12 +106,6 @@
                                     <segue destination="cgc-cE-LBw" kind="show" id="QmF-F1-y3A"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寄付進捗：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B2-RD-MeL">
-                                <rect key="frame" x="258" y="373" width="85" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-sb-x8P">
                                 <rect key="frame" x="16" y="267" width="568" height="87"/>
                                 <constraints>
@@ -130,11 +124,23 @@
                                     <constraint firstAttribute="width" constant="204" id="IVG-hh-1WF"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寄付進捗：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B2-RD-MeL">
+                                <rect key="frame" x="233" y="373" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srp-KW-lQU">
+                                <rect key="frame" x="326" y="373" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pt0-sb-x8P" firstAttribute="top" secondItem="tUe-y7-FFI" secondAttribute="bottom" constant="23" id="ENg-W6-1ui"/>
-                            <constraint firstItem="2B2-RD-MeL" firstAttribute="centerX" secondItem="pt0-sb-x8P" secondAttribute="centerX" id="IcB-iG-Ycu"/>
+                            <constraint firstItem="2B2-RD-MeL" firstAttribute="centerX" secondItem="pt0-sb-x8P" secondAttribute="centerX" constant="-24.5" id="IcB-iG-Ycu"/>
                             <constraint firstItem="pt0-sb-x8P" firstAttribute="leading" secondItem="tUe-y7-FFI" secondAttribute="leading" id="KXU-Jn-Yaw"/>
                             <constraint firstItem="l2c-di-7GL" firstAttribute="top" secondItem="lNf-4K-uwg" secondAttribute="bottom" constant="8" id="M88-tZ-ujv"/>
                             <constraint firstAttribute="centerX" secondItem="lNf-4K-uwg" secondAttribute="centerX" constant="9" id="N4g-GJ-agt"/>
@@ -142,16 +148,19 @@
                             <constraint firstItem="lNf-4K-uwg" firstAttribute="top" secondItem="2B2-RD-MeL" secondAttribute="bottom" constant="2" id="POi-b8-Kuz"/>
                             <constraint firstItem="tUe-y7-FFI" firstAttribute="trailing" secondItem="pt0-sb-x8P" secondAttribute="trailing" id="RWc-uh-DVu"/>
                             <constraint firstAttribute="centerY" secondItem="lNf-4K-uwg" secondAttribute="centerY" constant="-179" id="ULb-pH-ve9"/>
+                            <constraint firstItem="srp-KW-lQU" firstAttribute="leading" secondItem="2B2-RD-MeL" secondAttribute="trailing" constant="8" id="Vqv-p8-Rkq"/>
                             <constraint firstItem="2B2-RD-MeL" firstAttribute="top" secondItem="pt0-sb-x8P" secondAttribute="bottom" constant="19" id="WEh-Oj-Yc5"/>
+                            <constraint firstItem="srp-KW-lQU" firstAttribute="top" secondItem="pt0-sb-x8P" secondAttribute="bottom" constant="19" id="YY9-Lq-kQP"/>
                             <constraint firstItem="pt0-sb-x8P" firstAttribute="leading" secondItem="f6M-aa-IhL" secondAttribute="leadingMargin" id="fCz-v9-1OU"/>
                             <constraint firstItem="l2c-di-7GL" firstAttribute="leading" secondItem="f6M-aa-IhL" secondAttribute="leading" id="gJW-kT-ZjG"/>
                             <constraint firstAttribute="trailing" secondItem="l2c-di-7GL" secondAttribute="trailing" id="rGd-dM-YpN"/>
                             <constraint firstItem="tUe-y7-FFI" firstAttribute="top" secondItem="Zm9-eH-Ze9" secondAttribute="bottom" id="sk8-0w-hII"/>
-                            <constraint firstItem="2B2-RD-MeL" firstAttribute="centerX" secondItem="l2c-di-7GL" secondAttribute="centerX" id="xUW-HS-Cfd"/>
+                            <constraint firstItem="2B2-RD-MeL" firstAttribute="centerX" secondItem="l2c-di-7GL" secondAttribute="centerX" constant="-24.5" id="xUW-HS-Cfd"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="processValueLabel" destination="srp-KW-lQU" id="BB6-cr-OqI"/>
                         <outlet property="progressImageView" destination="lNf-4K-uwg" id="CMh-Xi-ntc"/>
                     </connections>
                 </viewController>
