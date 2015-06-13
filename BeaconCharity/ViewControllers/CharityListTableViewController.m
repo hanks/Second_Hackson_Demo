@@ -57,7 +57,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CharityCell" forIndexPath:indexPath];
     
-    // Configure the cell
+    // set title
+    UILabel *titileLabel = (UILabel *)[cell viewWithTag:99];
+    titileLabel.text = @"富士山応援寄付";
+    
+    // set subtitl
+    UILabel *subtitleLabel = (UILabel *)[cell viewWithTag:100];
+    subtitleLabel.text = @"富士山の通路を改善する";
+    
+    // set star image
     UIImageView *ratingImageView = (UIImageView *)[cell viewWithTag:101];
     ratingImageView.image = [self imageForRating:3];
     
