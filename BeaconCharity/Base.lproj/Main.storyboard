@@ -13,6 +13,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerImage" id="SeQ-UO-hl8">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="112"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CharityCell" rowHeight="80" id="sy8-O9-TSJ">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -86,18 +90,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-sb-x8P">
-                                <rect key="frame" x="16" y="384" width="568" height="164"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerImage" translatesAutoresizingMaskIntoConstraints="NO" id="tUe-y7-FFI">
+                                <rect key="frame" x="16" y="64" width="568" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="164" id="VD9-i4-ZEo"/>
+                                    <constraint firstAttribute="height" constant="300" id="UG7-Kh-Hbv"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BNI-8U-hiW">
-                                <rect key="frame" x="16" y="523" width="568" height="10"/>
+                                <rect key="frame" x="16" y="537" width="568" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="ubY-BX-Jvn"/>
                                 </constraints>
@@ -115,12 +115,24 @@
                                     <segue destination="cgc-cE-LBw" kind="show" id="QmF-F1-y3A"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerImage" translatesAutoresizingMaskIntoConstraints="NO" id="tUe-y7-FFI">
-                                <rect key="frame" x="16" y="64" width="568" height="300"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="寄付進捗：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B2-RD-MeL">
+                                <rect key="frame" x="16" y="479" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-sb-x8P">
+                                <rect key="frame" x="16" y="384" width="568" height="87"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="UG7-Kh-Hbv"/>
+                                    <constraint firstAttribute="height" constant="87" id="VD9-i4-ZEo"/>
                                 </constraints>
-                            </imageView>
+                                <string key="text">富士山の顕著な普遍的価値を守り、今よりも美しい富士山を未来の人たちへ残すため、世界遺産にふさわしい富士山の保存管理が求められています。静岡県では、富士山を愛する多くの皆様と一緒に富士山を守っていきたいと考えています。
+
+世界の宝 富士山を後世に末永く引き継いでいくため、
+皆様のご協力をお願いします。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -134,7 +146,7 @@
                             <constraint firstItem="l2c-di-7GL" firstAttribute="leading" secondItem="f6M-aa-IhL" secondAttribute="leading" id="glm-ph-JIZ"/>
                             <constraint firstAttribute="trailing" secondItem="tUe-y7-FFI" secondAttribute="trailing" constant="16" id="jYX-Oh-sZQ"/>
                             <constraint firstItem="tUe-y7-FFI" firstAttribute="top" secondItem="Zm9-eH-Ze9" secondAttribute="bottom" id="m6x-iM-Yw0"/>
-                            <constraint firstItem="l2c-di-7GL" firstAttribute="top" secondItem="BNI-8U-hiW" secondAttribute="bottom" constant="37" id="poF-n8-v1O"/>
+                            <constraint firstItem="l2c-di-7GL" firstAttribute="top" secondItem="BNI-8U-hiW" secondAttribute="bottom" constant="23" id="poF-n8-v1O"/>
                             <constraint firstAttribute="trailing" secondItem="BNI-8U-hiW" secondAttribute="trailing" constant="16" id="tif-9b-2WJ"/>
                         </constraints>
                     </view>
