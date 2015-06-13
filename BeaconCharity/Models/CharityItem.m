@@ -58,4 +58,10 @@
                      iconName:iconName];
 }
 
+- (float)accomplishmentRate {
+    float result = (float)self.actualMoney / (float)self.objectiveMoney;
+    // round two post decimal position
+    return roundf(result * 100) / 100.0;
+}
+
 @end

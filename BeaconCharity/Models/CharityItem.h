@@ -33,5 +33,6 @@
                     iconName:(NSString *)iconName;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
+- (float)accomplishmentRate;
 
 @end
