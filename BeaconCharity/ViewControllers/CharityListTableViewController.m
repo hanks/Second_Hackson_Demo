@@ -95,6 +95,14 @@
     ratingImageView.image = [self imageForRating:item.rating];
     
     // set icon
+    // call item image api
+    __weak UITableViewCell *weakCell = cell;
+    SuccessCallback successcallback = ^(AFHTTPRequestOperation *operation, id imageObject) {
+        UIImageView *icon = (UIImageView *)[weakCell viewWithTag:98];
+        icon.image = imageObject;
+    };
+    NSString *endpoint = [NSString stringWithFormat:@"/image/%@", item.iconName];
+    [APIManager requestImageWithEndpoint:endpoint successCallback:successcallback];
     
     
     return cell;
