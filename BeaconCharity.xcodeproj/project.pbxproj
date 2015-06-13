@@ -36,6 +36,7 @@
 		17C4A89C1B2C6AA800446691 /* CharityResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A89B1B2C6AA800446691 /* CharityResultViewController.m */; };
 		17C4A8A31B2CAA4D00446691 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A89F1B2CAA4D00446691 /* APIManager.m */; };
 		17C4A8A41B2CAA4D00446691 /* CharityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8A21B2CAA4D00446691 /* CharityItem.m */; };
+		17C4A8A61B2CDE3500446691 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C4A8A51B2CDE3500446691 /* MapKit.framework */; };
 		47AE7646B790F1023C673E0C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5B14FAE9DF6393EF42B848 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		17C4A89F1B2CAA4D00446691 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		17C4A8A11B2CAA4D00446691 /* CharityItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityItem.h; sourceTree = "<group>"; };
 		17C4A8A21B2CAA4D00446691 /* CharityItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityItem.m; sourceTree = "<group>"; };
+		17C4A8A51B2CDE3500446691 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2AC74448179053E5350497C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DE5B14FAE9DF6393EF42B848 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF39A2B51800357F9F70CB5F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C4A8A61B2CDE3500446691 /* MapKit.framework in Frameworks */,
 				47AE7646B790F1023C673E0C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +306,7 @@
 		849071E4FA3B5B8E40DCCA98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17C4A8A51B2CDE3500446691 /* MapKit.framework */,
 				DE5B14FAE9DF6393EF42B848 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -368,6 +372,14 @@
 				TargetAttributes = {
 					17C4A7501B2C1AEB00446691 = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					17C4A7691B2C1AEB00446691 = {
 						CreatedOnToolsVersion = 6.3.2;

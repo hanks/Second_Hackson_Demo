@@ -12,7 +12,7 @@
 #if TARGET_IPHONE_SIMULATOR
 static NSString * const BaseURLString = @"http://192.168.59.103:8080";
 #else
-static NSString * const BaseURLString = @"http://192.168.1.40";
+static NSString * const BaseURLString = @"http://172.20.10.6:8080";
 #endif
 
 typedef NS_ENUM(NSUInteger, RESPONSE_TYPE) {
