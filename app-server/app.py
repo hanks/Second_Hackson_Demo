@@ -53,7 +53,7 @@ def init_test_data():
     redis_manager.set_dict(dictionary, item.major, item.minor)
 
     # add item2
-    item = CharityItem(u"水族館存続のために！", u"水族館存続のために！", u"水族館存続のために！水族館存続のために！水族館存続のために！水族館存続のために！水族館存続のために！水族館存続のために！水族館存続のために！水族館存続のために！", "2.png", "12.png", 2, 12, 2, 2500, 1100)
+    item = CharityItem(u"水族館存続のために！", u"水族館存続のために！", u"水族館存続のために！水族館存続のために！水族館存続のために！水族館存続のために！水族館存続のために！水族館存続のために！水族館存続のために！水族館存続のために！", "2.png", "12.png", 2, 12, 2, 2000, 1100)
     dictionary = item.to_dict()
     redis_manager.set_dict(dictionary, item.major, item.minor)
 
