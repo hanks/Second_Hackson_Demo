@@ -147,6 +147,9 @@
     // jump to result view
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     CharityResultViewController *resultVC = [storyBoard instantiateViewControllerWithIdentifier:@"CharityResultViewController"];
+    resultVC.itemName = self.charityItem.itemName;
+    self.charityItem.actualMoney += 200;
+    resultVC.accomplateRate = [self.charityItem accomplishmentRate];
     [self presentViewController:resultVC animated:YES completion:nil];
 }
 

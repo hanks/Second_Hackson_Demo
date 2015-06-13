@@ -24,12 +24,12 @@
     // Do any additional setup after loading the view.
     
     [self.progressImageView setProgressImage:[UIImage imageNamed:@"colorHeart"]];
-    self.processValueLabel.text = @"83%";
+    self.processValueLabel.text = [NSString stringWithFormat:@"%d%%", (int)(self.accomplateRate * 100)];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
             // sleep for 0.6 sencond to pop up
             [NSThread sleepForTimeInterval:0.6];
-            [_progressImageView setProgress:.83 animated:YES];
+            [_progressImageView setProgress:self.accomplateRate animated:YES];
         });
     });
     

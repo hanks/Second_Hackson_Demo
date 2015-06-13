@@ -19,7 +19,7 @@
 @property (nonatomic, readonly) CLBeaconMinorValue minorValue;
 @property (nonatomic, readonly) NSInteger objectiveMoney;
 @property (nonatomic, readonly) NSInteger rating;
-@property (nonatomic, readonly) NSInteger actualMoney;
+@property (nonatomic, readwrite) NSInteger actualMoney;
 @property (nonatomic, readonly) NSString* iconName;
 @property (nonatomic, readonly) NSString* detailImageName;
 

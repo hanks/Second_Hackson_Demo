@@ -10,4 +10,7 @@
 
 @interface CharityResultViewController : UIViewController
 
+@property (nonatomic, readwrite) NSString *itemName;
+@property (nonatomic, readwrite) float accomplateRate;
+
 @end

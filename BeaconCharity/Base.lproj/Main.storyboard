@@ -183,14 +183,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8f-RM-3Nd">
-                                <rect key="frame" x="217" y="262" width="166" height="30"/>
-                                <state key="normal" title="富士山寄付Twitterを見る">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寄付ありがとうございました。" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-PB-Nn0">
-                                <rect key="frame" x="181" y="28" width="238" height="21"/>
+                                <rect key="frame" x="181" y="28" width="238" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -201,14 +195,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOh-zF-unH" customClass="M13ProgressViewImage">
-                                <rect key="frame" x="198" y="88" width="204" height="166"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="204" id="xgw-sc-6b8"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sge-dA-1Jf">
-                                <rect key="frame" x="298" y="59" width="42" height="21"/>
+                                <rect key="frame" x="298" y="59" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -222,9 +210,28 @@
                                     <segue destination="ZUH-Ph-R5T" kind="show" id="i9Q-0S-kgr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8f-RM-3Nd">
+                                <rect key="frame" x="261" y="262" width="91" height="30"/>
+                                <state key="normal" title="Twitterを見る">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOh-zF-unH" customClass="M13ProgressViewImage">
+                                <rect key="frame" x="205" y="88" width="204" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="xgw-sc-6b8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHr-nV-3XP">
+                                <rect key="frame" x="211" y="266" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="uHr-nV-3XP" firstAttribute="leading" secondItem="ASp-FT-cUb" secondAttribute="leadingMargin" constant="195" id="8N9-sI-qNV"/>
                             <constraint firstAttribute="centerY" secondItem="YXY-Xw-1DT" secondAttribute="centerY" constant="-44" id="JIv-Wg-x2e"/>
                             <constraint firstItem="p8f-RM-3Nd" firstAttribute="top" secondItem="WOh-zF-unH" secondAttribute="bottom" constant="8" id="MhZ-0m-RIT"/>
                             <constraint firstAttribute="centerX" secondItem="p8f-RM-3Nd" secondAttribute="centerX" id="Mq6-am-VCf"/>
@@ -232,6 +239,7 @@
                             <constraint firstItem="Sge-dA-1Jf" firstAttribute="top" secondItem="aAw-PB-Nn0" secondAttribute="bottom" constant="10" id="VQ6-bo-TFX"/>
                             <constraint firstAttribute="centerY" secondItem="aAw-PB-Nn0" secondAttribute="centerY" constant="261.5" id="XAX-QB-d6w"/>
                             <constraint firstAttribute="centerX" secondItem="k3d-qx-TW4" secondAttribute="centerX" constant="52.5" id="XdA-Tr-NOT"/>
+                            <constraint firstItem="p8f-RM-3Nd" firstAttribute="leading" secondItem="uHr-nV-3XP" secondAttribute="trailing" constant="8" id="ZSQ-S2-rRT"/>
                             <constraint firstAttribute="centerX" secondItem="WOh-zF-unH" secondAttribute="centerX" id="aim-zE-FOM"/>
                             <constraint firstItem="WOh-zF-unH" firstAttribute="top" secondItem="k3d-qx-TW4" secondAttribute="bottom" constant="8" id="glT-ck-NPz"/>
                             <constraint firstAttribute="centerY" secondItem="k3d-qx-TW4" secondAttribute="centerY" constant="230.5" id="iKh-gc-X1j"/>
@@ -239,6 +247,7 @@
                             <constraint firstAttribute="centerY" secondItem="p8f-RM-3Nd" secondAttribute="centerY" constant="23" id="wxr-lg-uye"/>
                             <constraint firstAttribute="centerX" secondItem="YXY-Xw-1DT" secondAttribute="centerX" id="xUy-NX-gw7"/>
                             <constraint firstAttribute="centerX" secondItem="aAw-PB-Nn0" secondAttribute="centerX" id="xnf-L9-T1q"/>
+                            <constraint firstItem="uHr-nV-3XP" firstAttribute="top" secondItem="WOh-zF-unH" secondAttribute="bottom" constant="12" id="ycm-st-hqG"/>
                         </constraints>
                     </view>
                     <connections>
@@ -274,6 +283,6 @@
         <image name="headerImage" width="1078" height="539"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wMo-QR-mVP"/>
+        <segue reference="i9Q-0S-kgr"/>
     </inferredMetricsTieBreakers>
 </document>
