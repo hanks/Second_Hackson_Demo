@@ -21,6 +21,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [_progressImageView setProgressImage:[UIImage imageNamed:@"colorHeart"]];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // sleep for 0.6 sencond to pop up
+            [NSThread sleepForTimeInterval:0.6];
+            [_progressImageView setProgress:.75 animated:YES];
+        });
+    });
+    
 }
 
 - (void)didReceiveMemoryWarning {
