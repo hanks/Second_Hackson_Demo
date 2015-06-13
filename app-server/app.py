@@ -1,7 +1,8 @@
 # coding: utf-8
 
-from flask import Flask, jsonify, url_for, render_template, send_from_directory
+from flask import Flask, jsonify, url_for, render_template, send_from_directory, request
 from redis import Redis
+import json
 import os
 
 from models import CharityItem
@@ -9,11 +10,6 @@ from managers import RedisManager
 
 app = Flask(__name__)
 redis_manager = RedisManager()
-
-@app.route("/")
-def hello():
-    data_dict = {"name": "watch"}
-    return jsonify(data_dict)
 
 @app.route("/charityitem/<major>/<minor>", methods=["GET"])
 def charity_item(major, minor):
@@ -24,6 +20,25 @@ def charity_item(major, minor):
 def charity_items(major):
     data_dicts = redis_manager.get_dicts(major)
     result = {"charityItems": data_dicts}
+    return jsonify(result)
+
+@app.route("/charityitem/<major>/<minor>", methods=["POST"])
+def update_charity_item(major, minor):
+    donation = int(request.form.get("donation"))
+    original_data_dict = redis_manager.get_dict(major, minor)
+    new_donation = int(original_data_dict["actual_money"]) + donation;
+    new_data_dict = original_data_dict
+    new_data_dict["actual_money"] = str(new_donation)
+
+    result = {}
+
+    try:
+       redis_manager.set_dict(new_data_dict, major, minor)
+    except:
+        pass
+    else:
+        result = {'status': 'ok'}
+        
     return jsonify(result)
 
 @app.route("/image/<name>")
