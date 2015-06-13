@@ -21,4 +21,8 @@ typedef void (^SuccessCallback)(AFHTTPRequestOperation *operation, id responseOb
                  successCallback:(SuccessCallback)successCallback;
 + (NSString *)buildURLWithEndpoint:(NSString *)endpoint;
 
++ (void)requestPostWithEndpoint:(NSString *)endpoint
+                     dictionary:(NSDictionary *)params
+                successCallback:(SuccessCallback)successCallback;
+
 @end

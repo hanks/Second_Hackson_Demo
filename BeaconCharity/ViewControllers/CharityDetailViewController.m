@@ -83,6 +83,7 @@
     //       and simply set payment.amount to your total charge.
     
     // Optional: include multiple items
+    // fake to 200$
     PayPalItem *item1 = [PayPalItem itemWithName:@"Old jeans with holes"
                                     withQuantity:2
                                        withPrice:[NSDecimalNumber decimalNumberWithString:@"100"]
@@ -104,7 +105,7 @@
     PayPalPayment *payment = [[PayPalPayment alloc] init];
     payment.amount = total;
     payment.currencyCode = @"USD";
-    payment.shortDescription = @"富士山寄付";
+    payment.shortDescription = self.charityItem.shortDesc;
     payment.items = items;  // if not including multiple items, then leave payment.items as nil
     payment.paymentDetails = paymentDetails; // if not including payment details, then leave payment.paymentDetails as nil
     
@@ -130,6 +131,15 @@
     NSLog(@"PayPal Payment Success!");
     
     [self sendCompletedPaymentToServer:completedPayment]; // Payment was processed successfully; send to server for verification and fulfillment
+    
+    // access api to update database
+    NSString *endpoint = [NSString stringWithFormat:@"/charityitem/%zd/%zd", self.charityItem.majorValue, self.charityItem.minorValue];
+    
+    NSDictionary *params = @{@"donation": @"200"};
+    
+    [APIManager requestPostWithEndpoint:endpoint
+                             dictionary:params
+                        successCallback:nil];
     
     // return to detail view
     [self dismissViewControllerAnimated:YES completion:nil];

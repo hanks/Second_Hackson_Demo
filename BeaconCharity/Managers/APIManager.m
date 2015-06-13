@@ -32,6 +32,20 @@ typedef NS_ENUM(NSUInteger, RESPONSE_TYPE) {
     [APIManager _requestWithEndpoint:endpoint responseType:RESPONSE_IMG successCallback:successCallback];
 }
 
++ (void)requestPostWithEndpoint:(NSString *)endpoint
+                     dictionary:(NSDictionary *)params
+                successCallback:(SuccessCallback)successCallback {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSString *urlStr = [APIManager buildURLWithEndpoint:endpoint];
+    
+    [manager POST:urlStr
+       parameters:params
+          success:successCallback
+          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+              NSLog(@"Error: %@", error);
+    }];
+}
+
 + (void)_requestWithEndpoint:(NSString *)endpoint
                 responseType:(RESPONSE_TYPE)type
              successCallback:(SuccessCallback)successCallback {

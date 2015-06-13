@@ -28,7 +28,7 @@
         _longDesc = longDesc;
         _shortDesc = shortDesc;
         _majorValue = major;
-        _minorValue = major;
+        _minorValue = minor;
         _objectiveMoney = objectiveMoney;
         _actualMoney = actualMoney;
         _rating = rating;
