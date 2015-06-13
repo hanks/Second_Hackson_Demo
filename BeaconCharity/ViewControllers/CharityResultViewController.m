@@ -27,7 +27,7 @@
     // Do any additional setup after loading the view.
     
     // set charity name twitter
-    self.charityItemNameLabel.text = self.itemName;
+    self.charityItemNameLabel.text = [NSString stringWithFormat:@"#%@", self.itemName];
     
     [self.progressImageView setProgressImage:[UIImage imageNamed:@"colorHeart"]];
     self.processValueLabel.text = [NSString stringWithFormat:@"%d%%", (int)(self.accomplateRate * 100)];
