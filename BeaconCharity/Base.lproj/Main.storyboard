@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Beacon Charity List-->
+        <!--Donatiny-->
         <scene sceneID="kSI-Bd-jiO">
             <objects>
                 <tableViewController id="ZUH-Ph-R5T" customClass="CharityListTableViewController" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                             <outlet property="delegate" destination="ZUH-Ph-R5T" id="YoZ-nP-YP3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Beacon Charity List" id="iqv-m8-l2Y"/>
+                    <navigationItem key="navigationItem" title="Donatiny" id="iqv-m8-l2Y"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MqX-o9-u7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -290,6 +290,6 @@
         <image name="headerImage" width="1078" height="539"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="i9Q-0S-kgr"/>
+        <segue reference="wMo-QR-mVP"/>
     </inferredMetricsTieBreakers>
 </document>
