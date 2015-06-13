@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		17C4A7571B2C1AEB00446691 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A7561B2C1AEB00446691 /* main.m */; };
 		17C4A75A1B2C1AEB00446691 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A7591B2C1AEB00446691 /* AppDelegate.m */; };
-		17C4A75D1B2C1AEB00446691 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A75C1B2C1AEB00446691 /* ViewController.m */; };
 		17C4A7601B2C1AEB00446691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C4A75E1B2C1AEB00446691 /* Main.storyboard */; };
 		17C4A7621B2C1AEB00446691 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C4A7611B2C1AEB00446691 /* Images.xcassets */; };
 		17C4A7651B2C1AEB00446691 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C4A7631B2C1AEB00446691 /* LaunchScreen.xib */; };
 		17C4A7711B2C1AEB00446691 /* BeaconCharityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A7701B2C1AEB00446691 /* BeaconCharityTests.m */; };
+		17C4A77D1B2C1B4F00446691 /* CharityListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A77C1B2C1B4F00446691 /* CharityListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		17C4A7561B2C1AEB00446691 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17C4A7581B2C1AEB00446691 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17C4A7591B2C1AEB00446691 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		17C4A75B1B2C1AEB00446691 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		17C4A75C1B2C1AEB00446691 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		17C4A75F1B2C1AEB00446691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17C4A7611B2C1AEB00446691 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		17C4A7641B2C1AEB00446691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		17C4A76A1B2C1AEB00446691 /* BeaconCharityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconCharityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C4A76F1B2C1AEB00446691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17C4A7701B2C1AEB00446691 /* BeaconCharityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconCharityTests.m; sourceTree = "<group>"; };
+		17C4A77B1B2C1B4F00446691 /* CharityListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityListTableViewController.h; sourceTree = "<group>"; };
+		17C4A77C1B2C1B4F00446691 /* CharityListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,9 @@
 		17C4A7531B2C1AEB00446691 /* BeaconCharity */ = {
 			isa = PBXGroup;
 			children = (
+				17C4A77A1B2C1B2200446691 /* ViewControllers */,
 				17C4A7581B2C1AEB00446691 /* AppDelegate.h */,
 				17C4A7591B2C1AEB00446691 /* AppDelegate.m */,
-				17C4A75B1B2C1AEB00446691 /* ViewController.h */,
-				17C4A75C1B2C1AEB00446691 /* ViewController.m */,
 				17C4A75E1B2C1AEB00446691 /* Main.storyboard */,
 				17C4A7611B2C1AEB00446691 /* Images.xcassets */,
 				17C4A7631B2C1AEB00446691 /* LaunchScreen.xib */,
@@ -117,6 +116,15 @@
 				17C4A76F1B2C1AEB00446691 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17C4A77A1B2C1B2200446691 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17C4A77B1B2C1B4F00446691 /* CharityListTableViewController.h */,
+				17C4A77C1B2C1B4F00446691 /* CharityListTableViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C4A75D1B2C1AEB00446691 /* ViewController.m in Sources */,
 				17C4A75A1B2C1AEB00446691 /* AppDelegate.m in Sources */,
+				17C4A77D1B2C1B4F00446691 /* CharityListTableViewController.m in Sources */,
 				17C4A7571B2C1AEB00446691 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

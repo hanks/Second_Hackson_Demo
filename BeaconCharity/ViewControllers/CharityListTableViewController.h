@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CharityListTableViewController.h
 //  BeaconCharity
 //
 //  Created by hanks on 6/13/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CharityListTableViewController : UITableViewController
 
 @end
-
