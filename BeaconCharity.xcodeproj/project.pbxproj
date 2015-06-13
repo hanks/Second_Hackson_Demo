@@ -34,6 +34,8 @@
 		17C4A8861B2C59EE00446691 /* M13ProgressViewSegmentedRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8731B2C59EE00446691 /* M13ProgressViewSegmentedRing.m */; };
 		17C4A8871B2C59EE00446691 /* M13ProgressViewStripedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8751B2C59EE00446691 /* M13ProgressViewStripedBar.m */; };
 		17C4A89C1B2C6AA800446691 /* CharityResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A89B1B2C6AA800446691 /* CharityResultViewController.m */; };
+		17C4A8A31B2CAA4D00446691 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A89F1B2CAA4D00446691 /* APIManager.m */; };
+		17C4A8A41B2CAA4D00446691 /* CharityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8A21B2CAA4D00446691 /* CharityItem.m */; };
 		47AE7646B790F1023C673E0C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5B14FAE9DF6393EF42B848 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +103,10 @@
 		17C4A8751B2C59EE00446691 /* M13ProgressViewStripedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewStripedBar.m; sourceTree = "<group>"; };
 		17C4A89A1B2C6AA800446691 /* CharityResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityResultViewController.h; sourceTree = "<group>"; };
 		17C4A89B1B2C6AA800446691 /* CharityResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityResultViewController.m; sourceTree = "<group>"; };
+		17C4A89E1B2CAA4D00446691 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		17C4A89F1B2CAA4D00446691 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		17C4A8A11B2CAA4D00446691 /* CharityItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityItem.h; sourceTree = "<group>"; };
+		17C4A8A21B2CAA4D00446691 /* CharityItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityItem.m; sourceTree = "<group>"; };
 		2AC74448179053E5350497C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DE5B14FAE9DF6393EF42B848 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF39A2B51800357F9F70CB5F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +154,8 @@
 		17C4A7531B2C1AEB00446691 /* BeaconCharity */ = {
 			isa = PBXGroup;
 			children = (
+				17C4A89D1B2CAA4D00446691 /* Managers */,
+				17C4A8A01B2CAA4D00446691 /* Models */,
 				17C4A84D1B2C59EE00446691 /* Classes */,
 				17C4A77A1B2C1B2200446691 /* ViewControllers */,
 				17C4A7581B2C1AEB00446691 /* AppDelegate.h */,
@@ -272,6 +280,24 @@
 				17C4A8751B2C59EE00446691 /* M13ProgressViewStripedBar.m */,
 			);
 			path = ProgressViews;
+			sourceTree = "<group>";
+		};
+		17C4A89D1B2CAA4D00446691 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				17C4A89E1B2CAA4D00446691 /* APIManager.h */,
+				17C4A89F1B2CAA4D00446691 /* APIManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		17C4A8A01B2CAA4D00446691 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17C4A8A11B2CAA4D00446691 /* CharityItem.h */,
+				17C4A8A21B2CAA4D00446691 /* CharityItem.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		849071E4FA3B5B8E40DCCA98 /* Frameworks */ = {
@@ -431,6 +457,7 @@
 				17C4A8861B2C59EE00446691 /* M13ProgressViewSegmentedRing.m in Sources */,
 				17C4A8871B2C59EE00446691 /* M13ProgressViewStripedBar.m in Sources */,
 				17C4A8791B2C59EE00446691 /* UINavigationController+M13ProgressViewBar.m in Sources */,
+				17C4A8A41B2CAA4D00446691 /* CharityItem.m in Sources */,
 				17C4A87A1B2C59EE00446691 /* M13ProgressView.m in Sources */,
 				17C4A8811B2C59EE00446691 /* M13ProgressViewMetroDotPolygon.m in Sources */,
 				17C4A7971B2C4CCF00446691 /* CharityDetailViewController.m in Sources */,
@@ -446,6 +473,7 @@
 				17C4A8801B2C59EE00446691 /* M13ProgressViewMetro.m in Sources */,
 				17C4A77D1B2C1B4F00446691 /* CharityListTableViewController.m in Sources */,
 				17C4A8831B2C59EE00446691 /* M13ProgressViewRadiative.m in Sources */,
+				17C4A8A31B2CAA4D00446691 /* APIManager.m in Sources */,
 				17C4A7571B2C1AEB00446691 /* main.m in Sources */,
 				17C4A8851B2C59EE00446691 /* M13ProgressViewSegmentedBar.m in Sources */,
 				17C4A87C1B2C59EE00446691 /* M13ProgressViewBorderedBar.m in Sources */,
