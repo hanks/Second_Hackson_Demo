@@ -19,6 +19,9 @@
 
 @property(nonatomic, strong, readwrite) IBOutlet UIButton *payNowButton;
 
+@property (weak, nonatomic) IBOutlet UIImageView *charityDetailImageView;
+@property (weak, nonatomic) IBOutlet UITextView *charityDetailDescTextView;
+
 @end
 
 @implementation CharityDetailViewController
@@ -36,6 +39,12 @@
             [_progressImageView setProgress:[self.charityItem accomplishmentRate] animated:YES];
         });
     });
+    
+    // update detail image
+    
+    
+    // update long description
+    [self.charityDetailDescTextView setText:self.charityItem.longDesc];
     
     // set up paypal configuration
     _payPalConfig = [[PayPalConfiguration alloc] init];
