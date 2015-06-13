@@ -14,6 +14,8 @@
 		17C4A7651B2C1AEB00446691 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C4A7631B2C1AEB00446691 /* LaunchScreen.xib */; };
 		17C4A7711B2C1AEB00446691 /* BeaconCharityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A7701B2C1AEB00446691 /* BeaconCharityTests.m */; };
 		17C4A77D1B2C1B4F00446691 /* CharityListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A77C1B2C1B4F00446691 /* CharityListTableViewController.m */; };
+		17C4A7901B2C4A4100446691 /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A78D1B2C4A4100446691 /* M13ProgressView.m */; };
+		17C4A7911B2C4A4100446691 /* M13ProgressViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A78F1B2C4A4100446691 /* M13ProgressViewImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		17C4A7701B2C1AEB00446691 /* BeaconCharityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconCharityTests.m; sourceTree = "<group>"; };
 		17C4A77B1B2C1B4F00446691 /* CharityListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityListTableViewController.h; sourceTree = "<group>"; };
 		17C4A77C1B2C1B4F00446691 /* CharityListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityListTableViewController.m; sourceTree = "<group>"; };
+		17C4A78C1B2C4A4100446691 /* M13ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressView.h; sourceTree = "<group>"; };
+		17C4A78D1B2C4A4100446691 /* M13ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressView.m; sourceTree = "<group>"; };
+		17C4A78E1B2C4A4100446691 /* M13ProgressViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewImage.h; sourceTree = "<group>"; };
+		17C4A78F1B2C4A4100446691 /* M13ProgressViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		17C4A7531B2C1AEB00446691 /* BeaconCharity */ = {
 			isa = PBXGroup;
 			children = (
+				17C4A78A1B2C4A4100446691 /* Classes */,
 				17C4A77A1B2C1B2200446691 /* ViewControllers */,
 				17C4A7581B2C1AEB00446691 /* AppDelegate.h */,
 				17C4A7591B2C1AEB00446691 /* AppDelegate.m */,
@@ -125,6 +132,25 @@
 				17C4A77C1B2C1B4F00446691 /* CharityListTableViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		17C4A78A1B2C4A4100446691 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				17C4A78B1B2C4A4100446691 /* ProgressViews */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		17C4A78B1B2C4A4100446691 /* ProgressViews */ = {
+			isa = PBXGroup;
+			children = (
+				17C4A78C1B2C4A4100446691 /* M13ProgressView.h */,
+				17C4A78D1B2C4A4100446691 /* M13ProgressView.m */,
+				17C4A78E1B2C4A4100446691 /* M13ProgressViewImage.h */,
+				17C4A78F1B2C4A4100446691 /* M13ProgressViewImage.m */,
+			);
+			path = ProgressViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				17C4A75A1B2C1AEB00446691 /* AppDelegate.m in Sources */,
+				17C4A7901B2C4A4100446691 /* M13ProgressView.m in Sources */,
 				17C4A77D1B2C1B4F00446691 /* CharityListTableViewController.m in Sources */,
+				17C4A7911B2C4A4100446691 /* M13ProgressViewImage.m in Sources */,
 				17C4A7571B2C1AEB00446691 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
