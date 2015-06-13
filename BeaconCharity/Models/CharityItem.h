@@ -13,20 +13,24 @@
 @interface CharityItem : NSObject
 
 @property (strong, nonatomic, readonly) NSString *itemName;
-@property (strong, nonatomic, readonly) NSString *desc;
+@property (strong, nonatomic, readonly) NSString *longDesc;
+@property (strong, nonatomic, readonly) NSString *shortDesc;
 @property (nonatomic, readonly) CLBeaconMajorValue majorValue;
 @property (nonatomic, readonly) CLBeaconMinorValue minorValue;
-@property (nonatomic, readonly) NSInteger showPriority;
-@property (nonatomic, readonly) NSInteger price;
-@property (nonatomic, readonly) NSString* imageName;
+@property (nonatomic, readonly) NSInteger objectiveMoney;
+@property (nonatomic, readonly) NSInteger rating;
+@property (nonatomic, readonly) NSInteger actualMoney;
+@property (nonatomic, readonly) NSString* iconName;
 
 - (instancetype)initWithName:(NSString *)itemName
-                 description:(NSString *)desc
+                    longDesc:(NSString *)longDesc
+                   shortDesc:(NSString *)shortDesc
                        major:(CLBeaconMajorValue)major
                        minor:(CLBeaconMinorValue)minor
-                       price:(NSInteger)price
-                    priority:(NSInteger)showPriority
-                   imageName:(NSString *)imageName;
+              objectiveMoney:(NSInteger)objectiveMoney
+                 actualMoney:(NSInteger)actualMoney
+                      rating:(NSInteger)rating
+                    iconName:(NSString *)iconName;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 
