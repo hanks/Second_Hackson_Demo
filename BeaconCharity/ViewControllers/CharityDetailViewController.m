@@ -7,8 +7,11 @@
 //
 
 #import "CharityDetailViewController.h"
+#import "M13ProgressViewImage.h"
 
 @interface CharityDetailViewController ()
+
+@property (weak, nonatomic) IBOutlet M13ProgressViewImage *progressImageView;
 
 @end
 
@@ -17,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [_progressImageView setProgressImage:[UIImage imageNamed:@"colorHeart"]];
 }
 
 - (void)didReceiveMemoryWarning {

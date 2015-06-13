@@ -14,9 +14,25 @@
 		17C4A7651B2C1AEB00446691 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C4A7631B2C1AEB00446691 /* LaunchScreen.xib */; };
 		17C4A7711B2C1AEB00446691 /* BeaconCharityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A7701B2C1AEB00446691 /* BeaconCharityTests.m */; };
 		17C4A77D1B2C1B4F00446691 /* CharityListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A77C1B2C1B4F00446691 /* CharityListTableViewController.m */; };
-		17C4A7901B2C4A4100446691 /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A78D1B2C4A4100446691 /* M13ProgressView.m */; };
-		17C4A7911B2C4A4100446691 /* M13ProgressViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A78F1B2C4A4100446691 /* M13ProgressViewImage.m */; };
 		17C4A7971B2C4CCF00446691 /* CharityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A7961B2C4CCF00446691 /* CharityDetailViewController.m */; };
+		17C4A8761B2C59EE00446691 /* M13ProgressConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8501B2C59EE00446691 /* M13ProgressConsole.m */; };
+		17C4A8771B2C59EE00446691 /* M13ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8531B2C59EE00446691 /* M13ProgressHUD.m */; };
+		17C4A8781B2C59EE00446691 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8551B2C59EE00446691 /* UIImage+ImageEffects.m */; };
+		17C4A8791B2C59EE00446691 /* UINavigationController+M13ProgressViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8581B2C59EE00446691 /* UINavigationController+M13ProgressViewBar.m */; };
+		17C4A87A1B2C59EE00446691 /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A85B1B2C59EE00446691 /* M13ProgressView.m */; };
+		17C4A87B1B2C59EE00446691 /* M13ProgressViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A85D1B2C59EE00446691 /* M13ProgressViewBar.m */; };
+		17C4A87C1B2C59EE00446691 /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A85F1B2C59EE00446691 /* M13ProgressViewBorderedBar.m */; };
+		17C4A87D1B2C59EE00446691 /* M13ProgressViewFilteredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8611B2C59EE00446691 /* M13ProgressViewFilteredImage.m */; };
+		17C4A87E1B2C59EE00446691 /* M13ProgressViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8631B2C59EE00446691 /* M13ProgressViewImage.m */; };
+		17C4A87F1B2C59EE00446691 /* M13ProgressViewLetterpress.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8651B2C59EE00446691 /* M13ProgressViewLetterpress.m */; };
+		17C4A8801B2C59EE00446691 /* M13ProgressViewMetro.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8671B2C59EE00446691 /* M13ProgressViewMetro.m */; };
+		17C4A8811B2C59EE00446691 /* M13ProgressViewMetroDotPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8691B2C59EE00446691 /* M13ProgressViewMetroDotPolygon.m */; };
+		17C4A8821B2C59EE00446691 /* M13ProgressViewPie.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A86B1B2C59EE00446691 /* M13ProgressViewPie.m */; };
+		17C4A8831B2C59EE00446691 /* M13ProgressViewRadiative.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A86D1B2C59EE00446691 /* M13ProgressViewRadiative.m */; };
+		17C4A8841B2C59EE00446691 /* M13ProgressViewRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A86F1B2C59EE00446691 /* M13ProgressViewRing.m */; };
+		17C4A8851B2C59EE00446691 /* M13ProgressViewSegmentedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8711B2C59EE00446691 /* M13ProgressViewSegmentedBar.m */; };
+		17C4A8861B2C59EE00446691 /* M13ProgressViewSegmentedRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8731B2C59EE00446691 /* M13ProgressViewSegmentedRing.m */; };
+		17C4A8871B2C59EE00446691 /* M13ProgressViewStripedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A8751B2C59EE00446691 /* M13ProgressViewStripedBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +59,44 @@
 		17C4A7701B2C1AEB00446691 /* BeaconCharityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconCharityTests.m; sourceTree = "<group>"; };
 		17C4A77B1B2C1B4F00446691 /* CharityListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityListTableViewController.h; sourceTree = "<group>"; };
 		17C4A77C1B2C1B4F00446691 /* CharityListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityListTableViewController.m; sourceTree = "<group>"; };
-		17C4A78C1B2C4A4100446691 /* M13ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressView.h; sourceTree = "<group>"; };
-		17C4A78D1B2C4A4100446691 /* M13ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressView.m; sourceTree = "<group>"; };
-		17C4A78E1B2C4A4100446691 /* M13ProgressViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewImage.h; sourceTree = "<group>"; };
-		17C4A78F1B2C4A4100446691 /* M13ProgressViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewImage.m; sourceTree = "<group>"; };
 		17C4A7951B2C4CCF00446691 /* CharityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityDetailViewController.h; sourceTree = "<group>"; };
 		17C4A7961B2C4CCF00446691 /* CharityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityDetailViewController.m; sourceTree = "<group>"; };
+		17C4A84F1B2C59EE00446691 /* M13ProgressConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressConsole.h; sourceTree = "<group>"; };
+		17C4A8501B2C59EE00446691 /* M13ProgressConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressConsole.m; sourceTree = "<group>"; };
+		17C4A8521B2C59EE00446691 /* M13ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressHUD.h; sourceTree = "<group>"; };
+		17C4A8531B2C59EE00446691 /* M13ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressHUD.m; sourceTree = "<group>"; };
+		17C4A8541B2C59EE00446691 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		17C4A8551B2C59EE00446691 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		17C4A8571B2C59EE00446691 /* UINavigationController+M13ProgressViewBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+M13ProgressViewBar.h"; sourceTree = "<group>"; };
+		17C4A8581B2C59EE00446691 /* UINavigationController+M13ProgressViewBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+M13ProgressViewBar.m"; sourceTree = "<group>"; };
+		17C4A85A1B2C59EE00446691 /* M13ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressView.h; sourceTree = "<group>"; };
+		17C4A85B1B2C59EE00446691 /* M13ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressView.m; sourceTree = "<group>"; };
+		17C4A85C1B2C59EE00446691 /* M13ProgressViewBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBar.h; sourceTree = "<group>"; };
+		17C4A85D1B2C59EE00446691 /* M13ProgressViewBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewBar.m; sourceTree = "<group>"; };
+		17C4A85E1B2C59EE00446691 /* M13ProgressViewBorderedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBorderedBar.h; sourceTree = "<group>"; };
+		17C4A85F1B2C59EE00446691 /* M13ProgressViewBorderedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewBorderedBar.m; sourceTree = "<group>"; };
+		17C4A8601B2C59EE00446691 /* M13ProgressViewFilteredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewFilteredImage.h; sourceTree = "<group>"; };
+		17C4A8611B2C59EE00446691 /* M13ProgressViewFilteredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewFilteredImage.m; sourceTree = "<group>"; };
+		17C4A8621B2C59EE00446691 /* M13ProgressViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewImage.h; sourceTree = "<group>"; };
+		17C4A8631B2C59EE00446691 /* M13ProgressViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewImage.m; sourceTree = "<group>"; };
+		17C4A8641B2C59EE00446691 /* M13ProgressViewLetterpress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewLetterpress.h; sourceTree = "<group>"; };
+		17C4A8651B2C59EE00446691 /* M13ProgressViewLetterpress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewLetterpress.m; sourceTree = "<group>"; };
+		17C4A8661B2C59EE00446691 /* M13ProgressViewMetro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewMetro.h; sourceTree = "<group>"; };
+		17C4A8671B2C59EE00446691 /* M13ProgressViewMetro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewMetro.m; sourceTree = "<group>"; };
+		17C4A8681B2C59EE00446691 /* M13ProgressViewMetroDotPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewMetroDotPolygon.h; sourceTree = "<group>"; };
+		17C4A8691B2C59EE00446691 /* M13ProgressViewMetroDotPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewMetroDotPolygon.m; sourceTree = "<group>"; };
+		17C4A86A1B2C59EE00446691 /* M13ProgressViewPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewPie.h; sourceTree = "<group>"; };
+		17C4A86B1B2C59EE00446691 /* M13ProgressViewPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewPie.m; sourceTree = "<group>"; };
+		17C4A86C1B2C59EE00446691 /* M13ProgressViewRadiative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewRadiative.h; sourceTree = "<group>"; };
+		17C4A86D1B2C59EE00446691 /* M13ProgressViewRadiative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewRadiative.m; sourceTree = "<group>"; };
+		17C4A86E1B2C59EE00446691 /* M13ProgressViewRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewRing.h; sourceTree = "<group>"; };
+		17C4A86F1B2C59EE00446691 /* M13ProgressViewRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewRing.m; sourceTree = "<group>"; };
+		17C4A8701B2C59EE00446691 /* M13ProgressViewSegmentedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewSegmentedBar.h; sourceTree = "<group>"; };
+		17C4A8711B2C59EE00446691 /* M13ProgressViewSegmentedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewSegmentedBar.m; sourceTree = "<group>"; };
+		17C4A8721B2C59EE00446691 /* M13ProgressViewSegmentedRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewSegmentedRing.h; sourceTree = "<group>"; };
+		17C4A8731B2C59EE00446691 /* M13ProgressViewSegmentedRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewSegmentedRing.m; sourceTree = "<group>"; };
+		17C4A8741B2C59EE00446691 /* M13ProgressViewStripedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewStripedBar.h; sourceTree = "<group>"; };
+		17C4A8751B2C59EE00446691 /* M13ProgressViewStripedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewStripedBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +138,7 @@
 		17C4A7531B2C1AEB00446691 /* BeaconCharity */ = {
 			isa = PBXGroup;
 			children = (
-				17C4A78A1B2C4A4100446691 /* Classes */,
+				17C4A84D1B2C59EE00446691 /* Classes */,
 				17C4A77A1B2C1B2200446691 /* ViewControllers */,
 				17C4A7581B2C1AEB00446691 /* AppDelegate.h */,
 				17C4A7591B2C1AEB00446691 /* AppDelegate.m */,
@@ -139,21 +187,77 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		17C4A78A1B2C4A4100446691 /* Classes */ = {
+		17C4A84D1B2C59EE00446691 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				17C4A78B1B2C4A4100446691 /* ProgressViews */,
+				17C4A84E1B2C59EE00446691 /* Console */,
+				17C4A8511B2C59EE00446691 /* HUD */,
+				17C4A8561B2C59EE00446691 /* NavigationController */,
+				17C4A8591B2C59EE00446691 /* ProgressViews */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		17C4A78B1B2C4A4100446691 /* ProgressViews */ = {
+		17C4A84E1B2C59EE00446691 /* Console */ = {
 			isa = PBXGroup;
 			children = (
-				17C4A78C1B2C4A4100446691 /* M13ProgressView.h */,
-				17C4A78D1B2C4A4100446691 /* M13ProgressView.m */,
-				17C4A78E1B2C4A4100446691 /* M13ProgressViewImage.h */,
-				17C4A78F1B2C4A4100446691 /* M13ProgressViewImage.m */,
+				17C4A84F1B2C59EE00446691 /* M13ProgressConsole.h */,
+				17C4A8501B2C59EE00446691 /* M13ProgressConsole.m */,
+			);
+			path = Console;
+			sourceTree = "<group>";
+		};
+		17C4A8511B2C59EE00446691 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				17C4A8521B2C59EE00446691 /* M13ProgressHUD.h */,
+				17C4A8531B2C59EE00446691 /* M13ProgressHUD.m */,
+				17C4A8541B2C59EE00446691 /* UIImage+ImageEffects.h */,
+				17C4A8551B2C59EE00446691 /* UIImage+ImageEffects.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		17C4A8561B2C59EE00446691 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				17C4A8571B2C59EE00446691 /* UINavigationController+M13ProgressViewBar.h */,
+				17C4A8581B2C59EE00446691 /* UINavigationController+M13ProgressViewBar.m */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		17C4A8591B2C59EE00446691 /* ProgressViews */ = {
+			isa = PBXGroup;
+			children = (
+				17C4A85A1B2C59EE00446691 /* M13ProgressView.h */,
+				17C4A85B1B2C59EE00446691 /* M13ProgressView.m */,
+				17C4A85C1B2C59EE00446691 /* M13ProgressViewBar.h */,
+				17C4A85D1B2C59EE00446691 /* M13ProgressViewBar.m */,
+				17C4A85E1B2C59EE00446691 /* M13ProgressViewBorderedBar.h */,
+				17C4A85F1B2C59EE00446691 /* M13ProgressViewBorderedBar.m */,
+				17C4A8601B2C59EE00446691 /* M13ProgressViewFilteredImage.h */,
+				17C4A8611B2C59EE00446691 /* M13ProgressViewFilteredImage.m */,
+				17C4A8621B2C59EE00446691 /* M13ProgressViewImage.h */,
+				17C4A8631B2C59EE00446691 /* M13ProgressViewImage.m */,
+				17C4A8641B2C59EE00446691 /* M13ProgressViewLetterpress.h */,
+				17C4A8651B2C59EE00446691 /* M13ProgressViewLetterpress.m */,
+				17C4A8661B2C59EE00446691 /* M13ProgressViewMetro.h */,
+				17C4A8671B2C59EE00446691 /* M13ProgressViewMetro.m */,
+				17C4A8681B2C59EE00446691 /* M13ProgressViewMetroDotPolygon.h */,
+				17C4A8691B2C59EE00446691 /* M13ProgressViewMetroDotPolygon.m */,
+				17C4A86A1B2C59EE00446691 /* M13ProgressViewPie.h */,
+				17C4A86B1B2C59EE00446691 /* M13ProgressViewPie.m */,
+				17C4A86C1B2C59EE00446691 /* M13ProgressViewRadiative.h */,
+				17C4A86D1B2C59EE00446691 /* M13ProgressViewRadiative.m */,
+				17C4A86E1B2C59EE00446691 /* M13ProgressViewRing.h */,
+				17C4A86F1B2C59EE00446691 /* M13ProgressViewRing.m */,
+				17C4A8701B2C59EE00446691 /* M13ProgressViewSegmentedBar.h */,
+				17C4A8711B2C59EE00446691 /* M13ProgressViewSegmentedBar.m */,
+				17C4A8721B2C59EE00446691 /* M13ProgressViewSegmentedRing.h */,
+				17C4A8731B2C59EE00446691 /* M13ProgressViewSegmentedRing.m */,
+				17C4A8741B2C59EE00446691 /* M13ProgressViewStripedBar.h */,
+				17C4A8751B2C59EE00446691 /* M13ProgressViewStripedBar.m */,
 			);
 			path = ProgressViews;
 			sourceTree = "<group>";
@@ -258,12 +362,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C4A8761B2C59EE00446691 /* M13ProgressConsole.m in Sources */,
+				17C4A87E1B2C59EE00446691 /* M13ProgressViewImage.m in Sources */,
+				17C4A8861B2C59EE00446691 /* M13ProgressViewSegmentedRing.m in Sources */,
+				17C4A8871B2C59EE00446691 /* M13ProgressViewStripedBar.m in Sources */,
+				17C4A8791B2C59EE00446691 /* UINavigationController+M13ProgressViewBar.m in Sources */,
+				17C4A87A1B2C59EE00446691 /* M13ProgressView.m in Sources */,
+				17C4A8811B2C59EE00446691 /* M13ProgressViewMetroDotPolygon.m in Sources */,
 				17C4A7971B2C4CCF00446691 /* CharityDetailViewController.m in Sources */,
+				17C4A8781B2C59EE00446691 /* UIImage+ImageEffects.m in Sources */,
+				17C4A8841B2C59EE00446691 /* M13ProgressViewRing.m in Sources */,
+				17C4A8821B2C59EE00446691 /* M13ProgressViewPie.m in Sources */,
+				17C4A87B1B2C59EE00446691 /* M13ProgressViewBar.m in Sources */,
+				17C4A8771B2C59EE00446691 /* M13ProgressHUD.m in Sources */,
 				17C4A75A1B2C1AEB00446691 /* AppDelegate.m in Sources */,
-				17C4A7901B2C4A4100446691 /* M13ProgressView.m in Sources */,
+				17C4A87F1B2C59EE00446691 /* M13ProgressViewLetterpress.m in Sources */,
+				17C4A87D1B2C59EE00446691 /* M13ProgressViewFilteredImage.m in Sources */,
+				17C4A8801B2C59EE00446691 /* M13ProgressViewMetro.m in Sources */,
 				17C4A77D1B2C1B4F00446691 /* CharityListTableViewController.m in Sources */,
-				17C4A7911B2C4A4100446691 /* M13ProgressViewImage.m in Sources */,
+				17C4A8831B2C59EE00446691 /* M13ProgressViewRadiative.m in Sources */,
 				17C4A7571B2C1AEB00446691 /* main.m in Sources */,
+				17C4A8851B2C59EE00446691 /* M13ProgressViewSegmentedBar.m in Sources */,
+				17C4A87C1B2C59EE00446691 /* M13ProgressViewBorderedBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
