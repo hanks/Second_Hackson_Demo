@@ -15,6 +15,9 @@
 @property (weak, nonatomic) IBOutlet M13ProgressViewImage *progressImageView;
 @property (weak, nonatomic) IBOutlet UILabel *processValueLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *charityItemNameLabel;
+
+
 @end
 
 @implementation CharityResultViewController
@@ -22,6 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // set charity name twitter
+    self.charityItemNameLabel.text = self.itemName;
     
     [self.progressImageView setProgressImage:[UIImage imageNamed:@"colorHeart"]];
     self.processValueLabel.text = [NSString stringWithFormat:@"%d%%", (int)(self.accomplateRate * 100)];
