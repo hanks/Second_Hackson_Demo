@@ -39,14 +39,27 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 5;
+    return 10;
+}
+
+- (UIImage *)imageForRating:(int)rating
+{
+    switch (rating) {
+        case 1: return [UIImage imageNamed:@"1StarSmall"];
+        case 2: return [UIImage imageNamed:@"2StarsSmall"];
+        case 3: return [UIImage imageNamed:@"3StarsSmall"];
+        case 4: return [UIImage imageNamed:@"4StarsSmall"];
+        case 5: return [UIImage imageNamed:@"5StarsSmall"];
+    }
+    return nil;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CharityCell" forIndexPath:indexPath];
     
     // Configure the cell
-    
+    UIImageView *ratingImageView = (UIImageView *)[cell viewWithTag:101];
+    ratingImageView.image = [self imageForRating:3];
     
     return cell;
 }
