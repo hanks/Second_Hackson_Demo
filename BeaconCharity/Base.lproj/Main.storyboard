@@ -98,7 +98,6 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2c-di-7GL">
                                 <rect key="frame" x="0.0" y="570" width="600" height="30"/>
-                                <color key="backgroundColor" red="0.1150770175" green="1" blue="0.21048580210000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="PayPal で寄付する">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -293,6 +292,6 @@
         <image name="headerImage" width="1078" height="539"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wMo-QR-mVP"/>
+        <segue reference="i9Q-0S-kgr"/>
     </inferredMetricsTieBreakers>
 </document>
