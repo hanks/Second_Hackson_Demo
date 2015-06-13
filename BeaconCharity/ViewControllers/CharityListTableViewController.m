@@ -163,7 +163,7 @@ static NSString * const kIdentifier = @"SomeIdentifier";
  */
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region{
     NSLog(@"Found Region");
-    [self sendLocalPush:@"You find me, see detail"];
+    [self sendLocalPush:@"ここに自分の力貢献しましょう"];
     [self vibratePhone];
 }
 
@@ -172,7 +172,7 @@ static NSString * const kIdentifier = @"SomeIdentifier";
  */
 - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region{
     NSLog(@"didExitRegion");
-    [self sendLocalPush:@"leave region"];
+    [self sendLocalPush:@"お疲れ様でした。まだね"];
     [self vibratePhone];
 }
 
