@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "PayPalMobile.h"
+#import "CharityItem.h"
 
 @interface CharityDetailViewController : UIViewController <PayPalPaymentDelegate>
 
-@property(nonatomic, strong, readwrite) NSString *environment;
 @property(nonatomic, assign, readwrite) BOOL acceptCreditCards;
+@property(nonatomic, strong) CharityItem *charityItem;
 
 @end

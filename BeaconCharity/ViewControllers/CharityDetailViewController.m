@@ -25,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     [self.progressImageView setProgressImage:[UIImage imageNamed:@"colorHeart"]];
     self.processValueLabel.text = @"75%";
