@@ -32,6 +32,10 @@
             [_progressImageView setProgress:.83 animated:YES];
         });
     });
+    
+    // set background image
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"resultBackground"]]];
+
 }
 
 - (void)didReceiveMemoryWarning {

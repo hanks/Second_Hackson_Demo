@@ -204,12 +204,6 @@
                                     <constraint firstAttribute="width" constant="204" id="xgw-sc-6b8"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News ...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcM-dj-Q4m">
-                                <rect key="frame" x="266" y="300" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sge-dA-1Jf">
                                 <rect key="frame" x="298" y="59" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -228,7 +222,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="AcM-dj-Q4m" secondAttribute="centerY" constant="-10.5" id="AMA-DR-RzK"/>
                             <constraint firstAttribute="centerY" secondItem="YXY-Xw-1DT" secondAttribute="centerY" constant="-44" id="JIv-Wg-x2e"/>
                             <constraint firstItem="p8f-RM-3Nd" firstAttribute="top" secondItem="WOh-zF-unH" secondAttribute="bottom" constant="8" id="MhZ-0m-RIT"/>
                             <constraint firstAttribute="centerX" secondItem="p8f-RM-3Nd" secondAttribute="centerX" id="Mq6-am-VCf"/>
@@ -240,11 +233,9 @@
                             <constraint firstItem="WOh-zF-unH" firstAttribute="top" secondItem="k3d-qx-TW4" secondAttribute="bottom" constant="8" id="glT-ck-NPz"/>
                             <constraint firstAttribute="centerY" secondItem="k3d-qx-TW4" secondAttribute="centerY" constant="230.5" id="iKh-gc-X1j"/>
                             <constraint firstItem="Sge-dA-1Jf" firstAttribute="leading" secondItem="k3d-qx-TW4" secondAttribute="trailing" constant="8" id="kCv-wT-SPq"/>
-                            <constraint firstItem="AcM-dj-Q4m" firstAttribute="top" secondItem="p8f-RM-3Nd" secondAttribute="bottom" constant="8" id="oNs-oK-1bR"/>
                             <constraint firstAttribute="centerY" secondItem="p8f-RM-3Nd" secondAttribute="centerY" constant="23" id="wxr-lg-uye"/>
                             <constraint firstAttribute="centerX" secondItem="YXY-Xw-1DT" secondAttribute="centerX" id="xUy-NX-gw7"/>
                             <constraint firstAttribute="centerX" secondItem="aAw-PB-Nn0" secondAttribute="centerX" id="xnf-L9-T1q"/>
-                            <constraint firstAttribute="centerX" secondItem="AcM-dj-Q4m" secondAttribute="centerX" id="zSX-jm-pY3"/>
                         </constraints>
                     </view>
                     <connections>
