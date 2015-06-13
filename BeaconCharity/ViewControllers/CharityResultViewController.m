@@ -7,8 +7,13 @@
 //
 
 #import "CharityResultViewController.h"
+#import "M13ProgressViewImage.h"
+
 
 @interface CharityResultViewController ()
+
+@property (weak, nonatomic) IBOutlet M13ProgressViewImage *progressImageView;
+@property (weak, nonatomic) IBOutlet UILabel *processValueLabel;
 
 @end
 
@@ -17,6 +22,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.progressImageView setProgressImage:[UIImage imageNamed:@"colorHeart"]];
+    self.processValueLabel.text = @"83%";
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // sleep for 0.6 sencond to pop up
+            [NSThread sleepForTimeInterval:0.6];
+            [_progressImageView setProgress:.83 animated:YES];
+        });
+    });
 }
 
 - (void)didReceiveMemoryWarning {

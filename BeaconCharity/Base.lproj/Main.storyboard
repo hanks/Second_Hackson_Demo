@@ -180,30 +180,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8f-RM-3Nd">
-                                <rect key="frame" x="16" y="72" width="178" height="30"/>
-                                <state key="normal" title="Follow the result of twitter">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8f-RM-3Nd">
+                                <rect key="frame" x="217" y="262" width="166" height="30"/>
+                                <state key="normal" title="富士山寄付Twitterを見る">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for your support" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-PB-Nn0">
-                                <rect key="frame" x="16" y="110" width="208" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寄付ありがとうございました。" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-PB-Nn0">
+                                <rect key="frame" x="181" y="28" width="238" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lPJ-I6-4ul">
-                                <rect key="frame" x="16" y="139" width="288" height="2"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News ...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcM-dj-Q4m">
-                                <rect key="frame" x="16" y="149" width="68" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寄付進捗：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3d-qx-TW4">
+                                <rect key="frame" x="205" y="59" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXY-Xw-1DT">
-                                <rect key="frame" x="16" y="178" width="39" height="30"/>
-                                <state key="normal" title="home">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOh-zF-unH" customClass="M13ProgressViewImage">
+                                <rect key="frame" x="198" y="88" width="204" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="xgw-sc-6b8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News ...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcM-dj-Q4m">
+                                <rect key="frame" x="266" y="300" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sge-dA-1Jf">
+                                <rect key="frame" x="298" y="59" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXY-Xw-1DT">
+                                <rect key="frame" x="255" y="329" width="90" height="30"/>
+                                <state key="normal" title="トップを戻る">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -212,11 +227,34 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="AcM-dj-Q4m" secondAttribute="centerY" constant="-10.5" id="AMA-DR-RzK"/>
+                            <constraint firstAttribute="centerY" secondItem="YXY-Xw-1DT" secondAttribute="centerY" constant="-44" id="JIv-Wg-x2e"/>
+                            <constraint firstItem="p8f-RM-3Nd" firstAttribute="top" secondItem="WOh-zF-unH" secondAttribute="bottom" constant="8" id="MhZ-0m-RIT"/>
+                            <constraint firstAttribute="centerX" secondItem="p8f-RM-3Nd" secondAttribute="centerX" id="Mq6-am-VCf"/>
+                            <constraint firstAttribute="centerY" secondItem="WOh-zF-unH" secondAttribute="centerY" constant="129" id="UFg-We-VqC"/>
+                            <constraint firstItem="Sge-dA-1Jf" firstAttribute="top" secondItem="aAw-PB-Nn0" secondAttribute="bottom" constant="10" id="VQ6-bo-TFX"/>
+                            <constraint firstAttribute="centerY" secondItem="aAw-PB-Nn0" secondAttribute="centerY" constant="261.5" id="XAX-QB-d6w"/>
+                            <constraint firstAttribute="centerX" secondItem="k3d-qx-TW4" secondAttribute="centerX" constant="52.5" id="XdA-Tr-NOT"/>
+                            <constraint firstAttribute="centerX" secondItem="WOh-zF-unH" secondAttribute="centerX" id="aim-zE-FOM"/>
+                            <constraint firstItem="WOh-zF-unH" firstAttribute="top" secondItem="k3d-qx-TW4" secondAttribute="bottom" constant="8" id="glT-ck-NPz"/>
+                            <constraint firstAttribute="centerY" secondItem="k3d-qx-TW4" secondAttribute="centerY" constant="230.5" id="iKh-gc-X1j"/>
+                            <constraint firstItem="Sge-dA-1Jf" firstAttribute="leading" secondItem="k3d-qx-TW4" secondAttribute="trailing" constant="8" id="kCv-wT-SPq"/>
+                            <constraint firstItem="AcM-dj-Q4m" firstAttribute="top" secondItem="p8f-RM-3Nd" secondAttribute="bottom" constant="8" id="oNs-oK-1bR"/>
+                            <constraint firstAttribute="centerY" secondItem="p8f-RM-3Nd" secondAttribute="centerY" constant="23" id="wxr-lg-uye"/>
+                            <constraint firstAttribute="centerX" secondItem="YXY-Xw-1DT" secondAttribute="centerX" id="xUy-NX-gw7"/>
+                            <constraint firstAttribute="centerX" secondItem="aAw-PB-Nn0" secondAttribute="centerX" id="xnf-L9-T1q"/>
+                            <constraint firstAttribute="centerX" secondItem="AcM-dj-Q4m" secondAttribute="centerX" id="zSX-jm-pY3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="processValueLabel" destination="Sge-dA-1Jf" id="EYp-rc-9lJ"/>
+                        <outlet property="progressImageView" destination="WOh-zF-unH" id="N20-0w-oQ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcP-WA-FAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="473" y="1587"/>
+            <point key="canvasLocation" x="528" y="1578"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gZD-UH-ZmT">
