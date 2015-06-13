@@ -16,6 +16,7 @@
 		17C4A77D1B2C1B4F00446691 /* CharityListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A77C1B2C1B4F00446691 /* CharityListTableViewController.m */; };
 		17C4A7901B2C4A4100446691 /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A78D1B2C4A4100446691 /* M13ProgressView.m */; };
 		17C4A7911B2C4A4100446691 /* M13ProgressViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A78F1B2C4A4100446691 /* M13ProgressViewImage.m */; };
+		17C4A7971B2C4CCF00446691 /* CharityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4A7961B2C4CCF00446691 /* CharityDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		17C4A78D1B2C4A4100446691 /* M13ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressView.m; sourceTree = "<group>"; };
 		17C4A78E1B2C4A4100446691 /* M13ProgressViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewImage.h; sourceTree = "<group>"; };
 		17C4A78F1B2C4A4100446691 /* M13ProgressViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewImage.m; sourceTree = "<group>"; };
+		17C4A7951B2C4CCF00446691 /* CharityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityDetailViewController.h; sourceTree = "<group>"; };
+		17C4A7961B2C4CCF00446691 /* CharityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 			children = (
 				17C4A77B1B2C1B4F00446691 /* CharityListTableViewController.h */,
 				17C4A77C1B2C1B4F00446691 /* CharityListTableViewController.m */,
+				17C4A7951B2C4CCF00446691 /* CharityDetailViewController.h */,
+				17C4A7961B2C4CCF00446691 /* CharityDetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C4A7971B2C4CCF00446691 /* CharityDetailViewController.m in Sources */,
 				17C4A75A1B2C1AEB00446691 /* AppDelegate.m in Sources */,
 				17C4A7901B2C4A4100446691 /* M13ProgressView.m in Sources */,
 				17C4A77D1B2C1B4F00446691 /* CharityListTableViewController.m in Sources */,
