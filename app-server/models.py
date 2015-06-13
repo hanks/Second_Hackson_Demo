@@ -3,11 +3,12 @@
 from __future__ import division
 
 class CharityItem(object):
-    def __init__(self, name, short_desc, long_desc, image_name, rating, major, minor, objective_money, actual_money):
+    def __init__(self, name, short_desc, long_desc, image_name, detail_image_name, rating, major, minor, objective_money, actual_money):
         self.name = name
         self.short_desc = short_desc
         self.long_desc = long_desc
         self.image_name = image_name
+        self.detail_image_name = detail_image_name
         self.rating = rating
         self.minor = minor
         self.major = major
@@ -20,6 +21,7 @@ class CharityItem(object):
             "short_desc": self.short_desc,
             "long_desc": self.long_desc,
             "image_name": self.image_name,
+            "detail_image_name": self.detail_image_name,
             "minor": self.minor,
             "major": self.major,
             "rating": self.rating,
@@ -37,11 +39,12 @@ class CharityItem(object):
         short_desc = int(json_data["short_desc"])
         long_desc = json_data["long_desc"]
         image_name = json_data["image_name"]
+        detail_image_name = json_data["detail_image_name"]
         minor = int(json_data["minor"])
         major = int(json_data["major"])
         rating = int(json_data["rating"])
         objective_money = int(json_data["objective_money"])
         actual_money = int(json_data["actual_money"])
 
-        return cls(name, short_desc, long_desc, image_name, rating, major, minor, objective_money, actual_money)
+        return cls(name, short_desc, long_desc, image_name, detail_image_name, rating, major, minor, objective_money, actual_money)
 
