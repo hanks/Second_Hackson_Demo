@@ -3,7 +3,7 @@
 from redis import Redis
 
 class RedisManager(object):
-    KEY_PREFIX = "GoodsGetter"
+    KEY_PREFIX = "BeaconCharity"
 
     def __init__(self):
         self.redis_instance = Redis(host="redismaster", port=6379)
@@ -19,4 +19,16 @@ class RedisManager(object):
     def get_dict(self, *args):
         key = self._generate_key(*args)
         return self.redis_instance.hgetall(key)
+
+    def get_dicts(self, major):
+        pattern = "{}*".format(major)
+        keys = self.redis_instance.keys(pattern=pattern)
         
+        result = []
+        for key in keys:
+            result.append(self.get_dict(key))
+
+        // sort by accomplishment_rate
+        result = sorted(result, kye=lambda k: k["actual_money"] / k["objective_money"], reverse=True)
+        
+        return result

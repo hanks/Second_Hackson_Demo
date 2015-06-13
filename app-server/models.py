@@ -25,6 +25,7 @@ class CharityItem(object):
             "actual_money": self.actual_money,
         }
 
+    @property
     def accomplishment_rate(self):
         return self.actual_money / self.objective_money
 
@@ -39,6 +40,6 @@ class CharityItem(object):
         rating = int(json_data["rating"])
         objective_money = int(json_data["objective_money"])
         actual_money = int(json_data["actual_money"])
-    def __init__(self, name, short_desc, long_desc, image_name, rating, major, minor, objective_money, actual_money):
+
         return cls(name, short_desc, long_desc, image_name, rating, major, minor, objective_money, actual_money)
 
