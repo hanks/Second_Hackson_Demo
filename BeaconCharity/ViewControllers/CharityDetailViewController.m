@@ -133,25 +133,4 @@
     NSLog(@"Here is your proof of payment:\n\n%@\n\nSend this to your server for confirmation and fulfillment.", completedPayment.confirmation);
 }
 
-#pragma mark PayPalProfileSharingDelegate methods
-
-- (void)payPalProfileSharingViewController:(PayPalProfileSharingViewController *)profileSharingViewController
-             userDidLogInWithAuthorization:(NSDictionary *)profileSharingAuthorization {
-    NSLog(@"PayPal Profile Sharing Authorization Success!");
-    [self showSuccess];
-    
-    [self sendProfileSharingAuthorizationToServer:profileSharingAuthorization];
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)userDidCancelPayPalProfileSharingViewController:(PayPalProfileSharingViewController *)profileSharingViewController {
-    NSLog(@"PayPal Profile Sharing Authorization Canceled");
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)sendProfileSharingAuthorizationToServer:(NSDictionary *)authorization {
-    // TODO: Send authorization to server
-    NSLog(@"Here is your authorization:\n\n%@\n\nSend this to your server to complete profile sharing setup.", authorization);
-}
-
 @end

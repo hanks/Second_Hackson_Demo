@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PayPalMobile.h"
 
-@interface CharityDetailViewController : UIViewController <PayPalPaymentDelegate, PayPalFuturePaymentDelegate, PayPalProfileSharingDelegate>
+@interface CharityDetailViewController : UIViewController <PayPalPaymentDelegate>
 
 @property(nonatomic, strong, readwrite) NSString *environment;
 @property(nonatomic, assign, readwrite) BOOL acceptCreditCards;
