@@ -26,19 +26,19 @@ def charity_items(major):
 def update_charity_item(major, minor):
     donation = int(request.form.get("donation"))
     original_data_dict = redis_manager.get_dict(major, minor)
-    new_donation = int(original_data_dict["actual_money"]) + donation;
+    new_donation = int(original_data_dict["actual_money"]) + donation
     new_data_dict = original_data_dict
     new_data_dict["actual_money"] = str(new_donation)
 
     result = {}
 
     try:
-       redis_manager.set_dict(new_data_dict, major, minor)
+        redis_manager.set_dict(new_data_dict, major, minor)
     except:
         pass
     else:
         result = {'status': 'ok'}
-        
+
     return jsonify(result)
 
 @app.route("/image/<name>")
@@ -75,4 +75,3 @@ def init_test_data():
 if __name__ == "__main__":
     init_test_data()
     app.run(host="0.0.0.0", debug=True)
-    
