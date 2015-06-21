@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-AFNetworkActivityLogger.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-EDStarRating.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PayPal-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2F92AD1DA2F04CF6905098ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>69D884F37544205B7E24B186</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70CFC744D4F3EE45840DDF9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AFB857B7518DA187D942D7DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B17ED0E68C5168CA1181152E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
