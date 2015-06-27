@@ -5,28 +5,15 @@ This is my first time to attend the real hackson event --  **[BattleHack](https:
  
 The entrance is like this:  
 ![entrane](https://github.com/hanks/Second_Hackson_Demo/raw/master/demo/entrance.jpg)  
-The environment was really awesome. Foods, Drinks, Music, Massage, really cool. The stuffs were all nice people, and the attendees were all friendly, when you checked their projects, some of demos were really cool.     
 
-But what a pity was, I was solo again..., actually speaking, I was semi-solo, because I had a teamate at the first day, and he went home back in the middle night at the first day.
+The environment was really awesome. Foods, Drinks, Music, Massage, really cool. The stuffs were all nice people, and the attendees were all friendly, when you checked their projects, some of demos were really cool.     
+![food_1](https://raw.githubusercontent.com/hanks/Second_Hackson_Demo/master/demo/food_1.JPG)![food_2](https://raw.githubusercontent.com/hanks/Second_Hackson_Demo/master/demo/food_2.JPG)
+
+But what a pity was, I was solo again..., actually speaking, I was semi-solo, because I had a teammate at the first day, and he went home back in the middle night. Whatever, I enjoyed this event:  
+![red bull](https://raw.githubusercontent.com/hanks/Second_Hackson_Demo/master/demo/red_bull.jpg)
+
+## Idea
+This time, I use iBeacon again, and the theme of project is charity, to help people to donate for the local environment development when they travel. And to let charity activities more close to people, and make people to do charity more positive after they experience the fun traveling. 
 
 ## Demo
-![demo](https://raw.githubusercontent.com/hanks/prelude/master/demo/demo.gif)
-
-## Installation
-
-### Installing Emacs 24
-
-Obviously to use the Emacs Prelude you have to install Emacs 24
-first. Have a look at the [WikEmacs articles on installing Emacs](http://wikemacs.org/index.php/Installing_Emacs).  
-
-After you install the original Emacs 24, and **Do Not Open It** and execute the steps below.
-
-### Installing Modified Prelude 
-
-```bash
-cd ~
-export PRELUDE_URL="https://github.com/hanks/prelude.git" && curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
-```
-
-## Run
-At this time, just open Emacs and wait, and it will do the configuration automatically. Then Happy Coding!
+![demo](https://raw.githubusercontent.com/hanks/Second_Hackson_Demo/master/demo/demo.gif)
