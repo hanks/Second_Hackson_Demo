@@ -15,5 +15,10 @@ But what a pity was, I was solo again..., actually speaking, I was semi-solo, be
 ## Idea
 This time, I use iBeacon again, and the theme of project is charity, to help people to donate for the local environment development when they travel. And to let charity activities more close to people, and make people to do charity more positive after they experience the fun traveling. 
 
+## Scenario
+I told a story when I did the presentation.  
+
+>One day, you and your kids go to a aquarium and have a fun day. When you come back home, you pass a iBeacon device set near the exit, then you get a push notification in your phone, you check it, and it is happened the charity information for this aquarium. You think about it, and want to keep the nice memory to some day in the future, maybe with your kids to come here again. So you do the donation by following your heart.
+
 ## Demo
 ![demo](https://raw.githubusercontent.com/hanks/Second_Hackson_Demo/master/demo/demo.gif)
